@@ -1,0 +1,15 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 334f97f3d3cd40618c2220e4046fb974 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot adder8bit_test_behav xil_defaultlib.adder8bit_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 4 for port A [E:/Vivado/Projects/lab2/lab2.srcs/sim_3/new/adder8bit_test.sv:18]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.adder4bit
+Compiling module xil_defaultlib.adder8bit_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot adder8bit_test_behav
