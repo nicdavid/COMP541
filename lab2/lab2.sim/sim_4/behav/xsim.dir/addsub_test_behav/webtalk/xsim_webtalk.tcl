@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Aug 31 20:11:41 2017" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Sep  5 19:47:29 2017" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "1909853" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "23 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6396_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3916791735 -regid "" -xml E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/usage_statistics_ext_xsim.xml -html E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6436_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1726190383 -regid "" -xml E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/usage_statistics_ext_xsim.xml -html E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/usage_statistics_ext_xsim.html -wdm E:/Vivado/Projects/lab2/lab2.sim/sim_4/behav/xsim.dir/addsub_test_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
