@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Sep 25 12:28:50 2017
+# Process ID: 2400
+# Current directory: E:/Vivado/Projects/lab5/lab5.runs/synth_1
+# Command line: vivado.exe -log counter8digit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter8digit.tcl
+# Log file: E:/Vivado/Projects/lab5/lab5.runs/synth_1/counter8digit.vds
+# Journal file: E:/Vivado/Projects/lab5/lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source counter8digit.tcl -notrace
