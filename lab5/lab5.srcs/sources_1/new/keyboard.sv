@@ -1,5 +1,3 @@
-`timescale 1ns / 1ps
-
 //////////////////////////////////////////////////////////////////////////////////
 //
 // Montek Singh
@@ -17,7 +15,7 @@
 `default_nettype none
 
 module keyboard(
-   input wire clk,
+   input wire clock,
    input wire ps2_clk,
    input wire ps2_data,
    output logic [31:0] keyb_char = 0
@@ -29,10 +27,10 @@ module keyboard(
    logic [1:0] ps2_clk_prev2 = 2'b11;
    logic [19:0] timeout = 0;
    
-   always_ff @(posedge clk)
+   always_ff @(posedge clock)
       ps2_clk_prev2 <= {ps2_clk_prev2[0], ps2_clk};
       
-   always_ff @(posedge clk)
+   always_ff @(posedge clock)
    begin
       if((count == 11) || (timeout[19] == 1))
       begin
@@ -58,7 +56,7 @@ module keyboard(
       end
    end
    
-   always_ff @(posedge clk)
+   always_ff @(posedge clock)
       timeout <= (count != 0) ? timeout + 1 : 0;
 
 endmodule

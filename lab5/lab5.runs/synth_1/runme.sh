@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log counter8digit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter8digit.tcl
+EAStep vivado -log keyboard_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source keyboard_test.tcl

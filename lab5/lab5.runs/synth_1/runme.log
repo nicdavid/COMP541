@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log counter8digit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter8digit.tcl
+    with args -log keyboard_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source keyboard_test.tcl
 
 
 ****** Vivado v2017.2 (64-bit)
@@ -8,26 +8,26 @@
   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source counter8digit.tcl -notrace
-Command: synth_design -top counter8digit -part xc7a100tcsg324-1
+source keyboard_test.tcl -notrace
+Command: synth_design -top keyboard_test -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4220 
+INFO: Helper process launched with PID 10676 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 308.563 ; gain = 77.844
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 308.809 ; gain = 78.301
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'counter8digit' [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/counter8digit.sv:5]
-INFO: [Synth 8-638] synthesizing module 'counter' [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/counter.sv:5]
-INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/counter.sv:5]
+INFO: [Synth 8-638] synthesizing module 'keyboard_test' [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard_test.sv:11]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard.sv:17]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (1#1) [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard.sv:17]
 INFO: [Synth 8-638] synthesizing module 'display8digit' [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/display8digit.sv:9]
 INFO: [Synth 8-638] synthesizing module 'hexto7seg' [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/imports/new/hexto7seg.sv:4]
 INFO: [Synth 8-256] done synthesizing module 'hexto7seg' (2#1) [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/imports/new/hexto7seg.sv:4]
 INFO: [Synth 8-256] done synthesizing module 'display8digit' (3#1) [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/display8digit.sv:9]
-INFO: [Synth 8-256] done synthesizing module 'counter8digit' (4#1) [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/counter8digit.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_test' (4#1) [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard_test.sv:11]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 347.637 ; gain = 116.918
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 348.133 ; gain = 117.625
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -37,7 +37,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 347.637 ; gain = 116.918
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 348.133 ; gain = 117.625
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -46,46 +46,122 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/imports/new/segdisplay.xdc]
 Finished Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/imports/new/segdisplay.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/imports/new/segdisplay.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/counter8digit_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/counter8digit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/imports/new/segdisplay.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/keyboard_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/keyboard_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/clock.xdc]
 Finished Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/clock.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/counter8digit_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/counter8digit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/keyboard_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/keyboard_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc]
-WARNING: [Vivado 12-584] No ports matched 'ps2_clk'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc:3]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ps2_data'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc:4]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc:4]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/keyboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/keyboard_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/keyboard_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc]
+WARNING: [Vivado 12-584] No ports matched 'audPWM'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audPWM'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audEn'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audEn'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/sound.xdc]
+Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc]
+WARNING: [Vivado 12-584] No ports matched 'aclMISO'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclMOSI'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclSCK'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclSS'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/accel.xdc]
+Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/lab5/lab5.srcs/constrs_1/new/led.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 659.875 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 661.117 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element value_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/counter.sv:11]
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard.sv:60]
 WARNING: [Synth 8-6014] Unused sequential element c_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/display8digit.sv:21]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -97,8 +173,17 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -106,6 +191,18 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module display8digit 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -126,35 +223,66 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element c/value_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/counter.sv:11]
-WARNING: [Synth 8-6014] Unused sequential element d/c_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/display8digit.sv:21]
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[51]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[52]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[53]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[54]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[55]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[56]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[57]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[58]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[59]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[60]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[61]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[62]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (c/value_reg[63]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[20]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[21]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[22]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[23]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[24]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[25]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[26]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[27]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[28]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[29]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[30]) is unused and will be removed from module counter8digit.
-WARNING: [Synth 8-3332] Sequential element (d/c_reg[31]) is unused and will be removed from module counter8digit.
+WARNING: [Synth 8-6014] Unused sequential element keyb/count_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element keyb/timeout_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/keyboard.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element disp/c_reg was removed.  [E:/Vivado/Projects/lab5/lab5.srcs/sources_1/new/display8digit.sv:21]
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[31]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[30]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[29]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[28]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[27]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[26]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[25]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[24]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[20]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[21]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[22]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[23]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[24]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[25]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[26]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[27]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[28]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[29]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[30]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (disp/c_reg[31]) is unused and will be removed from module keyboard_test.
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[13]' (FDE) to 'keyb/temp_char_reg[14]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[9]' (FDE) to 'keyb/temp_char_reg[8]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[8]' (FDE) to 'keyb/temp_char_reg[10]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[14]' (FDE) to 'keyb/temp_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[10]' (FDE) to 'keyb/temp_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/temp_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[13]' (FDE) to 'keyb/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[9]' (FDE) to 'keyb/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[8]' (FDE) to 'keyb/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[14]' (FDE) to 'keyb/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[10]' (FDE) to 'keyb/keyb_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/keyb_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[21]' (FDE) to 'keyb/temp_char_reg[22]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[11]' (FDE) to 'keyb/temp_char_reg[17]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[17]' (FDE) to 'keyb/temp_char_reg[16]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[16]' (FDE) to 'keyb/temp_char_reg[18]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[22]' (FDE) to 'keyb/temp_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyb/temp_char_reg[18]' (FDE) to 'keyb/temp_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/temp_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[21]' (FDE) to 'keyb/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[17]' (FDE) to 'keyb/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[11]' (FDE) to 'keyb/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[16]' (FDE) to 'keyb/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[22]' (FDE) to 'keyb/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[18]' (FDE) to 'keyb/keyb_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/keyb_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[29]' (FDE) to 'keyb/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[25]' (FDE) to 'keyb/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[19]' (FDE) to 'keyb/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[24]' (FDE) to 'keyb/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[30]' (FDE) to 'keyb/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyb/keyb_char_reg[26]' (FDE) to 'keyb/keyb_char_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyb/keyb_char_reg[27] )
+WARNING: [Synth 8-3332] Sequential element (keyb/temp_char_reg[19]) is unused and will be removed from module keyboard_test.
+WARNING: [Synth 8-3332] Sequential element (keyb/keyb_char_reg[27]) is unused and will be removed from module keyboard_test.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -166,13 +294,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -184,7 +312,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -208,7 +336,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -221,7 +349,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -233,25 +361,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -268,42 +396,44 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    18|
-|3     |LUT1   |    71|
-|4     |LUT3   |     8|
-|5     |LUT4   |     7|
-|6     |LUT6   |     8|
-|7     |MUXF7  |     4|
-|8     |FDRE   |    71|
-|9     |IBUF   |     1|
-|10    |OBUF   |    16|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    41|
+|4     |LUT2   |     3|
+|5     |LUT3   |    14|
+|6     |LUT4   |     5|
+|7     |LUT5   |     8|
+|8     |LUT6   |     7|
+|9     |MUXF7  |     1|
+|10    |FDRE   |    82|
+|11    |IBUF   |     3|
+|12    |OBUF   |    16|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+--------------+------+
 |      |Instance |Module        |Cells |
 +------+---------+--------------+------+
-|1     |top      |              |   205|
-|2     |  c      |counter       |   134|
-|3     |  d      |display8digit |    53|
+|1     |top      |              |   191|
+|2     |  disp   |display8digit |    53|
+|3     |  keyb   |keyboard      |   118|
 +------+---------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 659.875 ; gain = 116.918
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 659.875 ; gain = 429.156
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 661.117 ; gain = 117.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 661.117 ; gain = 430.609
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-21 Infos, 31 Warnings, 2 Critical Warnings and 0 Errors encountered.
+56 Infos, 52 Warnings, 24 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 659.875 ; gain = 436.918
-INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/lab5/lab5.runs/synth_1/counter8digit.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 659.875 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 25 12:29:11 2017...
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 661.117 ; gain = 438.375
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/lab5/lab5.runs/synth_1/keyboard_test.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 661.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 26 13:21:11 2017...

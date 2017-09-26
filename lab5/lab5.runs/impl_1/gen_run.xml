@@ -1,74 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1506356930">
-  <File Type="PWROPT-DRC" Name="counter8digit_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="counter8digit_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="counter8digit_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="counter8digit_power_routed.rpx"/>
-  <File Type="PA-TCL" Name="counter8digit.tcl"/>
-  <File Type="OPT-HWDEF" Name="counter8digit.hwdef"/>
-  <File Type="RDI-RDI" Name="counter8digit.vdi"/>
-  <File Type="OPT-DCP" Name="counter8digit_opt.dcp"/>
-  <File Type="OPT-DRC" Name="counter8digit_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="counter8digit_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="counter8digit_pwropt.dcp"/>
-  <File Type="PWROPT-TIMING" Name="counter8digit_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="counter8digit_placed.dcp"/>
-  <File Type="PLACE-IO" Name="counter8digit_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="counter8digit_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="counter8digit_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="counter8digit_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="counter8digit_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="counter8digit_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="counter8digit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="counter8digit_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="counter8digit_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="counter8digit_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="counter8digit_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="counter8digit_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="counter8digit_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="counter8digit_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="counter8digit_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="counter8digit_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="counter8digit_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="counter8digit_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="counter8digit.bin"/>
-  <File Type="ROUTE-DRC-RPX" Name="counter8digit_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="counter8digit.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="counter8digit_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="counter8digit.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="counter8digit_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="counter8digit.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="counter8digit_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="counter8digit_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="counter8digit_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="counter8digit_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="counter8digit_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="counter8digit_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="counter8digit_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="counter8digit_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="counter8digit_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="counter8digit_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="counter8digit_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="counter8digit_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="counter8digit_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="counter8digit_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="counter8digit_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="counter8digit.bit"/>
-  <File Type="BITSTR-RBT" Name="counter8digit.rbt"/>
-  <File Type="BITSTR-NKY" Name="counter8digit.nky"/>
-  <File Type="BITSTR-BMM" Name="counter8digit_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="counter8digit.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="counter8digit.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1506446450">
+  <File Type="PWROPT-DRC" Name="keyboard_test_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="keyboard_test_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="keyboard_test_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="keyboard_test_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="keyboard_test.tcl"/>
+  <File Type="OPT-HWDEF" Name="keyboard_test.hwdef"/>
+  <File Type="RDI-RDI" Name="keyboard_test.vdi"/>
+  <File Type="OPT-DCP" Name="keyboard_test_opt.dcp"/>
+  <File Type="OPT-DRC" Name="keyboard_test_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="keyboard_test_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="keyboard_test_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="keyboard_test_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="keyboard_test_placed.dcp"/>
+  <File Type="PLACE-IO" Name="keyboard_test_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="keyboard_test_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="keyboard_test_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="keyboard_test_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="keyboard_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="keyboard_test_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="keyboard_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="keyboard_test_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="keyboard_test_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="keyboard_test_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="keyboard_test_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="keyboard_test_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="keyboard_test_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="keyboard_test_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="keyboard_test_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="keyboard_test_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="keyboard_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="keyboard_test_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="keyboard_test.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="keyboard_test_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="keyboard_test.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="keyboard_test_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="keyboard_test.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="keyboard_test_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="keyboard_test.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="keyboard_test_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="keyboard_test_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="keyboard_test_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="keyboard_test_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="keyboard_test_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="keyboard_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="keyboard_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="keyboard_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="keyboard_test_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="keyboard_test_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="keyboard_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="keyboard_test_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="keyboard_test_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="keyboard_test_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="keyboard_test_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="keyboard_test.bit"/>
+  <File Type="BITSTR-RBT" Name="keyboard_test.rbt"/>
+  <File Type="BITSTR-NKY" Name="keyboard_test.nky"/>
+  <File Type="BITSTR-BMM" Name="keyboard_test_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="keyboard_test.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="keyboard_test.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/counter.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/display8digit.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -85,16 +78,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/counter8digit.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/keyboard.sv">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -102,13 +87,84 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/keyboard_test.sv">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lol/accelerometer.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/Users/Nick-PC/Desktop/lol/accelerometer.sv"/>
+        <Attr Name="ImportTime" Val="1479243930"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/montek_sound_Nexys4.sv">
+      <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/display4digit.sv">
+    <File Path="$PSRCDIR/sources_1/imports/lol/ADXL362Ctrl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/Users/Nick-PC/Desktop/lol/ADXL362Ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1477336774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lol/AccelArithmetics.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/Users/Nick-PC/Desktop/lol/AccelArithmetics.vhd"/>
+        <Attr Name="ImportTime" Val="1479243418"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lol/AccelerometerCtl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/Users/Nick-PC/Desktop/lol/AccelerometerCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1479243670"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lol/SPI_If.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/Users/Nick-PC/Desktop/lol/SPI_If.vhd"/>
+        <Attr Name="ImportTime" Val="1477336794"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/io_demo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lol/accel_sound_demo.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="G:/Users/Nick-PC/Desktop/lol/accel_sound_demo.sv"/>
+        <Attr Name="ImportTime" Val="1479245062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -124,9 +180,33 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/counter8digit.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display4digit.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/montek_sound_test.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="counter8digit"/>
+      <Option Name="TopModule" Val="keyboard_test"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -146,6 +226,24 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/new/keyboard.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/sound.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/accel.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/led.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
