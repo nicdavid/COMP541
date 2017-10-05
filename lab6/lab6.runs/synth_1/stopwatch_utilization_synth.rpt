@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Oct  4 21:40:03 2017
+| Date         : Wed Oct  4 22:08:03 2017
 | Host         : DESKTOP-MH2MRKQ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file stopwatch_utilization_synth.rpt -pb stopwatch_utilization_synth.pb
 | Design       : stopwatch
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  160 |     0 |     63400 |  0.25 |
-|   LUT as Logic          |  160 |     0 |     63400 |  0.25 |
+| Slice LUTs*             |  157 |     0 |     63400 |  0.25 |
+|   LUT as Logic          |  157 |     0 |     63400 |  0.25 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |  141 |     0 |    126800 |  0.11 |
 |   Register as Flip Flop |  139 |     0 |    126800 |  0.11 |
@@ -148,7 +148,7 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |  139 |        Flop & Latch |
 | LUT1     |   86 |                 LUT |
-| LUT2     |   56 |                 LUT |
+| LUT2     |   53 |                 LUT |
 | CARRY4   |   36 |          CarryLogic |
 | OBUF     |   16 |                  IO |
 | LUT6     |    9 |                 LUT |

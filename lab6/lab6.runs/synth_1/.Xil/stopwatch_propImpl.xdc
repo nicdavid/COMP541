@@ -41,5 +41,3 @@ set_property src_info {type:XDC file:3 line:3 export:INPUT save:INPUT read:READ}
 set_property -dict { PACKAGE_PIN F15  IOSTANDARD LVCMOS33 } [get_ports { BTNU }];
 set_property src_info {type:XDC file:3 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN V10  IOSTANDARD LVCMOS33 } [get_ports { BTND }];
-set_property src_info {type:XDC file:3 line:5 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN R10  IOSTANDARD LVCMOS33 } [get_ports { BTNR }];

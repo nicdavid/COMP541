@@ -17,7 +17,7 @@ module debouncer #(parameter N=20)(
 	
 	always_ff @(posedge clock) begin
 		count <= (raw != clean)  ? count + 1 : 0;
-		clean <= (count[N]) ? ~clean : clean;
+		clean <= (count[N]) ? raw : clean;
 	end
 	
 endmodule
