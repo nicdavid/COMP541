@@ -43,16 +43,20 @@ module io_demo(
     assign audEn = 1;
     
     //Selects the correct period to play
-    assign period = keyb_char == 2'h15 ? notes_periods[0] :
-                    keyb_char == 2'h1D ? notes_periods[1] :
-                    keyb_char == 2'h24 ? notes_periods[2] :
-                    keyb_char == 2'h2D ? notes_periods[3] :
-                    keyb_char == 2'h2C ? notes_periods[4] :
-                    keyb_char == 2'h35 ? notes_periods[5] :
-                    keyb_char == 2'h3C ? notes_periods[6] :
-                    keyb_char == 2'h43 ? notes_periods[7] : 0;
+    assign period = keyb_char == 8'b0001_0101 ? notes_periods[0] :
+                    keyb_char == 8'b0001_1101 ? notes_periods[1] :
+                    keyb_char == 8'b0010_0100 ? notes_periods[2] :
+                    keyb_char == 8'b0010_1101 ? notes_periods[3] :
+                    keyb_char == 8'b0010_1100 ? notes_periods[4] :
+                    keyb_char == 8'b0011_0101 ? notes_periods[5] :
+                    keyb_char == 8'b0011_1100 ? notes_periods[6] :
+                    keyb_char == 8'b0100_0011 ? notes_periods[7] : 0;
     
     montek_sound_Nexys4 sound(clock, period, audPWM);
+    
+    //For debugging purposes
+    //Displays the keycode on the display
+    //display8digit disp(keyb_char, clock, segments, digitselect);
     
     
     
