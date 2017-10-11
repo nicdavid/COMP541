@@ -55,36 +55,28 @@ module fsm (
             //Counting Up
             COUNT_UP: begin
                 countup <= 1'b1; 
-                //paused <= 1'b0;
             end
             PAUSING_UP: begin
-                //countup <= 1'b1;
                 paused <= 1'b1;
             end
             PAUSED_UP: begin
                 countup <= 1'b1;
-                //paused <= 1'b1;
             end
             RESUMING_UP: begin
-                //countup <= 1'b1;
                 paused <= 1'b0;
             end
             
             //Counting Down
             COUNT_DOWN: begin
                 countup <= 1'b0;
-                //paused <= 1'b0;
             end
             PAUSING_DOWN: begin
-                //countup <= 1'b0;
                 paused <= 1'b1;
             end
             PAUSED_DOWN: begin
                 countup <= 1'b0;
-                //paused <= 1'b1;
             end
             RESUMING_DOWN: begin
-                //countup <= 1'b0;
                 paused <= 1'b0;
             end
             
