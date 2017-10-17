@@ -3,10 +3,10 @@
 
 
 module bitmapmem #(
-    parameter Nloc = 12,
-    parameter Dbits = 12
+    parameter Nloc,
+    parameter Dbits
 )(
-    input wire [Nloc-1:0] bitmapaddr,
+    input wire [$clog2(Nloc-1):0] bitmapaddr,
     output wire [Dbits-1:0] colorvalue
     );
     
@@ -16,6 +16,5 @@ module bitmapmem #(
         
     //Returns the color value at the address
     assign colorvalue = bm[bitmapaddr];
-        
         
 endmodule

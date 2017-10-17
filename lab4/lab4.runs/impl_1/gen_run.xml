@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1505689588">
+  <File Type="PWROPT-DRC" Name="vgadisplaydriver_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="vgadisplaydriver_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="vgadisplaydriver_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="vgadisplaydriver_power_routed.rpx"/>
   <File Type="PA-TCL" Name="vgadisplaydriver.tcl"/>
-  <File Type="INIT-TIMING" Name="vgadisplaydriver_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="vgadisplaydriver_methodology_drc_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="vgadisplaydriver_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="vgadisplaydriver.hwdef"/>
   <File Type="RDI-RDI" Name="vgadisplaydriver.vdi"/>
   <File Type="OPT-DCP" Name="vgadisplaydriver_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="vgadisplaydriver.hwdef"/>
   <File Type="OPT-DRC" Name="vgadisplaydriver_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="vgadisplaydriver_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="vgadisplaydriver_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="vgadisplaydriver_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="vgadisplaydriver_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="vgadisplaydriver_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="vgadisplaydriver_drc_routed.rpx"/>
   <File Type="BG-BIN" Name="vgadisplaydriver.bin"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="vgadisplaydriver_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="vgadisplaydriver_drc_routed.rpx"/>
   <File Type="BG-DRC" Name="vgadisplaydriver.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vgadisplaydriver_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="vgadisplaydriver_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MSK" Name="vgadisplaydriver.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vgadisplaydriver_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="vgadisplaydriver_methodology_drc_routed.rpx"/>
   <File Type="BG-BGN" Name="vgadisplaydriver.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="vgadisplaydriver_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="vgadisplaydriver_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="vgadisplaydriver_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="vgadisplaydriver_route_status.rpt"/>
