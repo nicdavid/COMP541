@@ -33,7 +33,7 @@ module vgadisplaydriver #(
     
     //X/Y and Character Code to Bitmap Address
     wire [$clog2(BitmapNloc)-1:0] bitmapaddr;
-    assign bitmapaddr = {charcode,y[4:0],x[4:0]};
+    assign bitmapaddr = {charcode,y[3:0],x[3:0]};
     
 
     //Bitmap Memory

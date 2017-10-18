@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Mon Oct 16 22:13:02 2017
+| Date         : Wed Oct 18 11:04:49 2017
 | Host         : DESKTOP-MH2MRKQ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,15 +23,56 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 14
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 14         |
-+-----------+----------+-------------------------------+------------+
+             Violations found: 22
++-----------+----------+-----------------------------------------------------------+------------+
+| Rule      | Severity | Description                                               | Violations |
++-----------+----------+-----------------------------------------------------------+------------+
+| SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 8          |
+| TIMING-18 | Warning  | Missing input or output delay                             | 14         |
++-----------+----------+-----------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+SYNTH-5#1 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_0_255_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#2 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_0_255_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#3 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_256_511_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#4 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_256_511_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#5 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_512_767_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#6 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_512_767_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#7 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_768_1023_0_0 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
+SYNTH-5#8 Warning
+Mapped onto distributed RAM because of timing constraints  
+The instance sm/mem_reg_768_1023_1_1 is implemented as distributed LUT RAM for the following reason: The timing constraints suggest that the chosen mapping will yield a better timing.
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
 An output delay is missing on blue[0] relative to clock(s) sys_clk_pin 

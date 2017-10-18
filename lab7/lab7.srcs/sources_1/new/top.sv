@@ -23,9 +23,9 @@ module top #(
     assign green = RGB[7:4];
     assign blue = RGB[3:0];
     
-
     //Screen Memory
-    screenmem #(ScreenNloc, ScreenDbits) sm(.screenaddr(screenaddr), .charcode(charcode));
+    screenmem #(ScreenNloc, ScreenDbits) sm(.clock(clock), .wr(1'b0), .writedata(2'b01), .screenaddr(screenaddr), .charcode(charcode));
+//    screenmem #(ScreenNloc, ScreenDbits) sm(.screenaddr(screenaddr), .charcode(charcode));
     
     
 endmodule

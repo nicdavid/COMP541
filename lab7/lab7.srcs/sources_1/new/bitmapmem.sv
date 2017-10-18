@@ -6,8 +6,8 @@ module bitmapmem #(
     parameter Nloc,
     parameter Dbits
 )(
-    input wire [$clog2(Nloc-1):0] bitmapaddr,
-    output wire [Dbits-1:0] colorvalue
+    input wire [$clog2(Nloc)-1:0] bitmapaddr,
+    output logic [Dbits-1:0] colorvalue
     );
     
     //Instantiates and initializes memory
