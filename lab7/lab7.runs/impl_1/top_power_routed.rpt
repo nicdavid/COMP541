@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Wed Oct 18 11:04:49 2017
+| Date             : Thu Oct 19 13:01:52 2017
 | Host             : DESKTOP-MH2MRKQ running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.099  |
-| Dynamic (W)              | 0.002  |
+| Total On-Chip Power (W)  | 0.098  |
+| Dynamic (W)              | 0.001  |
 | Device Static (W)        | 0.097  |
 | Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 84.5   |
-| Junction Temperature (C) | 25.5   |
+| Max Ambient (C)          | 84.6   |
+| Junction Temperature (C) | 25.4   |
 | Confidence Level         | Medium |
 | Setting File             | ---    |
 | Simulation Activity File | ---    |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      155 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |       46 |     63400 |            0.07 |
+| Slice Logic              |    <0.001 |      151 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |       40 |     63400 |            0.06 |
 |   Register               |    <0.001 |       22 |    126800 |            0.02 |
 |   CARRY4                 |    <0.001 |        3 |     15850 |            0.02 |
-|   Others                 |     0.000 |        6 |       --- |             --- |
+|   Others                 |     0.000 |        5 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |       26 |     63400 |            0.04 |
 |   LUT as Distributed RAM |     0.000 |       40 |     19000 |            0.21 |
-| Signals                  |    <0.001 |       75 |       --- |             --- |
+| Signals                  |    <0.001 |       71 |       --- |             --- |
 | I/O                      |    <0.001 |       15 |       210 |            7.14 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.099 |          |           |                 |
+| Total                    |     0.098 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -139,7 +139,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top                      |     0.002 |
+| top                      |     0.001 |
 |   sm                     |    <0.001 |
 |     mem_reg_0_127_0_0    |    <0.001 |
 |     mem_reg_0_127_0_0__0 |    <0.001 |
@@ -155,8 +155,8 @@ Table of Contents
 |     mem_reg_512_767_1_1  |    <0.001 |
 |     mem_reg_768_1023_0_0 |    <0.001 |
 |     mem_reg_768_1023_1_1 |    <0.001 |
-|   vga                    |    <0.001 |
-|     myvgatimer           |    <0.001 |
+|   vgadriver              |    <0.001 |
+|     vga                  |    <0.001 |
 |       xy                 |    <0.001 |
 +--------------------------+-----------+
 

@@ -22,7 +22,7 @@ module vgatimer(
     
     
     //Instantiates an xy-counter using clock tick counter
-    //xycounter #(`WholeLine, `WholeFrame) xy(clock, Every2ndTick, x, y); //50 MHz
+//    xycounter #(`WholeLine, `WholeFrame) xy(clock, Every2ndTick, x, y); //50 MHz
     
     xycounter #(`WholeLine, `WholeFrame) xy(clock, Every4thTick, x, y); //25 MHz
     

@@ -3,29 +3,33 @@
 
 
 module top #(
-    parameter ScreenNloc = 1200,
-    parameter ScreenDbits = 2,
-    parameter BitmapNloc = 1024,
-    parameter BitmapDbits = 12
-)(
+    parameter sNloc = 1200,
+    parameter sDbits = 2,
+    parameter bNloc = 1024,
+    parameter bDbits = 12
+) (
     input wire clock,
     output wire [3:0] red, green, blue,
-    output wire vsync, hsync
+    output wire hsync, vsync
     );
-  
-    //VGA Display Driver
-    wire [$clog2(ScreenNloc)-1:0] screenaddr;
-    wire [ScreenDbits-1:0] charcode;
+    
+    //Sets up wires
     wire [11:0] RGB;
-    vgadisplaydriver #(ScreenNloc, ScreenDbits, BitmapNloc, BitmapDbits) vga(.clock(clock), .screenaddr(screenaddr), .charcode(charcode), .RGB(RGB), .hsync(hsync), .vsync(vsync));
-
+    wire [$clog2(sNloc)-1:0] screenaddr;
+    wire [sDbits-1:0] charcode;
+    
+    //Instantiates vgadisplaydriver
+    vgadisplaydriver #(sNloc, sDbits, bNloc, bDbits) vgadriver(.clock(clock), .charcode(charcode),
+                                                                .hsync(hsync), .vsync(vsync),
+                                                                .RGB(RGB), .screenaddr(screenaddr));
+                                                                
+                                                                
+    //Sets the color values
     assign red = RGB[11:8];
     assign green = RGB[7:4];
     assign blue = RGB[3:0];
     
-    //Screen Memory
-    screenmem #(ScreenNloc, ScreenDbits) sm(.clock(clock), .wr(1'b0), .writedata(2'b01), .screenaddr(screenaddr), .charcode(charcode));
-//    screenmem #(ScreenNloc, ScreenDbits) sm(.screenaddr(screenaddr), .charcode(charcode));
-    
+    //Instantiates screen memory
+    screenmem #(sNloc, sDbits) sm(.clock(clock), .wr(1'b0), .wd(2'b0), .addr(screenaddr), .charcode(charcode));
     
 endmodule
