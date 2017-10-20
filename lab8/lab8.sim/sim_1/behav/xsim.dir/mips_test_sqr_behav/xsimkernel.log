@@ -1,0 +1,7 @@
+Running: xsim.dir/mips_test_sqr_behav/xsimk.exe -simmode gui -wdb mips_test_sqr_behav.wdb -simrunnum 0 -socket 56015
+Design successfully loaded
+Design Loading Memory Usage: 5916 KB (Peak: 5916 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6956 KB (Peak: 6956 KB)
+Simulation CPU Usage: 62 ms
