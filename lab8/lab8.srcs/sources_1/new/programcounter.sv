@@ -9,7 +9,7 @@ module programcounter(
     );
     
     //Program Counter (pc)
-    logic [31:0] Q = 32'b0;
+    logic [31:0] Q = 32'h0040_0000;
     always_ff @(posedge clock or posedge reset) begin
         if (reset)
             Q <= 32'h0040_0000;

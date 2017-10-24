@@ -64,7 +64,7 @@ module mips_tester_full;
 
 
     // Instantiate the Unit Under Test (UUT)
-    top #("E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/full_imem.mem", "E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/full_dmem.mem") uut(
+    top #("E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/full_imem.mem","E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/full_dmem.mem") uut(
         .clock(clock), 
         .reset(reset),
         .enable(enable)
