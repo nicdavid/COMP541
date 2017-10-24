@@ -22,7 +22,7 @@ module register_file #(
    );
 
    logic [Dbits-1:0] rf [Nloc-1:0];                             // The actual registers where data is stored
-   initial $readmemh(initFile, rf, 0, Nloc-1);                  // initial $readmemh(initfile, ..., ..., ...);  
+   initial $readmemh("E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/rfmem.mem", rf, 0, Nloc-1);                  // initial $readmemh(initfile, ..., ..., ...);  
                                                                 // Usually no need to initialize register file
 
    always_ff @(posedge clock)                                   // Memory write: only when wr==1, and only at posedge clock

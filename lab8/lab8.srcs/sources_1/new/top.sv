@@ -9,25 +9,17 @@
 `default_nettype none
 
 module top #(
-    parameter imem_init="sqr_dmem.mem",		// correct filename inherited from parent/tester
-    parameter dmem_init="sqr_imem.mem"		// correct filename inherited from parent/tester
+    parameter imem_init="E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/full_imem.mem",	   // correct filename inherited from parent/tester
+    parameter dmem_init="E:/Vivado/Projects/lab8/lab8.srcs/sources_1/new/full_dmem.mem"		   // correct filename inherited from parent/tester
 )(
     input wire clock, reset, enable
 );
    
-    wire [31:0] pc, instr, mem_readdata, mem_writedata, mem_addr;
-    wire mem_wr;
+   wire [31:0] pc ,instr, mem_readdata, mem_writedata, mem_addr;
+   wire mem_wr;
 
-    //Mips processor
-    mips mips(.clock(clock), .reset(reset), .enable(enable), .pc(pc), .instr(instr), .mem_wr(mem_wr),
-                .mem_addr(mem_addr), .mem_writedata(mem_writedata), .mem_readdata(mem_readdata));
-   
-    //Instruction Memory
-    imem #(.Nloc(64), .Dbits(32), .initfile(imem_init)) imem(.pc(pc[31:0]), .instr(instr));
-   
-    //Data Memory
-    dmem #(.Nloc(64), .Dbits(32), .initfile(dmem_init)) dmem(.clock(clock), .mem_wr(mem_wr),
-                                                                .mem_addr(mem_addr), .mem_writedata(mem_writedata),
-                                                                .mem_readdata(mem_readdata));
+   mips mips(clock, reset, enable, pc, instr, mem_wr, mem_addr, mem_writedata, mem_readdata);
+   imem #(.Nloc(64), .Dbits(32), .initfile(imem_init)) imem(pc[31:0], instr);
+   dmem #(.Nloc(64), .Dbits(32), .initfile(dmem_init)) dmem(clock, mem_wr, mem_addr, mem_writedata, mem_readdata);
 
 endmodule

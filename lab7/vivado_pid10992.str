@@ -1,0 +1,83 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 10992
+License: Customer
+
+Current time: 	10/21/17 10:44:03 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 54 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/Vivado/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	E:/Vivado/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o;C:/Windows/Sun/Java/bin;C:/Windows/system32;C:/Windows;E:/Vivado/Vivado/2017.2/bin;E:/Vivado/Vivado/2017.2/lib/win64.o;E:/Vivado/Vivado/2017.2/tps/win64/jre/bin/server;E:/Vivado/Vivado/2017.2/tps/win64/jre/bin;E:/Vivado/Vivado/2017.2/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2017.2/ids_lite/ISE/lib/nt64;E:/Vivado/Vivado_HLS/2017.2/bin;C:/ProgramData/Oracle/Java/javapath;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files/nodejs/;F:/Program Files (x86)/Brackets/command;C:/Program Files (x86)/Skype/Phone/;G:/Program Files (x86)/Brackets/command;C:/Users/Nick-PC/AppData/Local/Microsoft/WindowsApps;C:/Users/Nick-PC/AppData/Roaming/npm;E:/Vivado/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;E:/Vivado/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Nick-PC
+User home directory: C:/Users/Nick-PC
+User working directory: E:/Vivado/Projects/lab7
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Vivado/Vivado
+HDI_APPROOT: E:/Vivado/Vivado/2017.2
+RDI_DATADIR: E:/Vivado/Vivado/2017.2/data
+RDI_BINDIR: E:/Vivado/Vivado/2017.2/bin
+
+User preferences location: C:/Users/Nick-PC/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Nick-PC/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/Nick-PC/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	E:/Vivado/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	E:/Vivado/Projects/lab7/.Xil/Vivado-10992-DESKTOP-MH2MRKQ
+
+GUI allocated memory:	187 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 634 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: E:\Vivado\Projects\lab7\lab7.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 50 MB (+50423kb) [00:00:03]
+// [Engine Memory]: 515 MB (+388946kb) [00:00:03]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 86 MB (+34541kb) [00:00:04]
+// [Engine Memory]: 568 MB (+27695kb) [00:00:04]
+// [GUI Memory]: 106 MB (+16893kb) [00:00:05]
+// [Engine Memory]: 624 MB (+29783kb) [00:00:05]
+// [GUI Memory]: 115 MB (+3869kb) [00:00:05]
+// [GUI Memory]: 122 MB (+1110kb) [00:00:05]
+// Tcl Message: open_project E:/Vivado/Projects/lab7/lab7.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/Vivado/2017.2/data/ip'. 
+// Project name: lab7; location: E:/Vivado/Projects/lab7; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 648 MB. GUI used memory: 41 MB. Current time: 10/21/17 10:44:04 PM EDT
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeMainWindow("lab7 - [E:/Vivado/Projects/lab7/lab7.xpr] - Vivado 2017.2"); // cg:JFrame
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET

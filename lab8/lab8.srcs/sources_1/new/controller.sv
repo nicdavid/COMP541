@@ -60,7 +60,7 @@ module controller(
     output wire wr,
     output wire werf, 
     output wire [1:0] asel
-    ); 
+    );
 
     //PC select
     assign pcsel = ((op == 6'b0) & (func == `JR)) ? 2'b11               // controls 4-way multiplexer

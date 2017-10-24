@@ -21,7 +21,12 @@ module datapath#(
     
     //Program Counter (pc)
     wire [Dbits-1:0] newPC, pcPlus4;
-    programcounter pcm(.clock(clock), .reset(reset), .enable(enable), .pcsel(pcsel), .JT(JT), .BT(BT), .J(J), .pc(pc), .pcPlus4(pcPlus4));
+    assign newPC = (pcsel == 2'b11) ? JT
+                        : (pcsel == 2'b10) ? {pc[31:28],J,2'b00}
+                        : (pcsel == 2'b01) ? BT
+                        : pcPlus4;
+    programcounter pcm(.clock(clock), .reset(reset), .enable(enable), .D(newPC), .pc(pc));
+    assign pcPlus4 = pc + 4;
     
     
     //Jump
