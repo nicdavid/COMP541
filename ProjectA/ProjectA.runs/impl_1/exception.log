@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file E:\Vivado\Projects\ProjectA\ProjectA.runs\impl_1/.write_bitstream.begin.rst
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

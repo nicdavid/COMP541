@@ -1,0 +1,1057 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Nov  9 23:03:06 2017
+# Process ID: 11820
+# Current directory: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top.vdi
+# Journal file: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc]
+WARNING: [Vivado 12-584] No ports matched 'aclMISO'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclMOSI'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclSCK'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclSS'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clock'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clock'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clock]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ps2_clk'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ps2_data'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc]
+WARNING: [Vivado 12-584] No ports matched 'audPWM'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audPWM'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audEn'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audEn'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'red[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hsync'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vsync'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 492.961 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 916.164 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 916.164 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 916.164 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 916.164 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 916.164 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.164 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 916.164 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 916.164 ; gain = 0.000
+18 Infos, 43 Warnings, 43 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 916.164 ; gain = 423.203
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_opt.dcp' has been generated.
+Command: report_drc -file top_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 930.680 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 930.680 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 930.680 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 930.680 ; gain = 0.000
+30 Infos, 43 Warnings, 43 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 23:03:22 2017...
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Nov  9 23:03:28 2017
+# Process ID: 13532
+# Current directory: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top.vdi
+# Journal file: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc]
+WARNING: [Vivado 12-584] No ports matched 'aclMISO'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclMOSI'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclSCK'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'aclSS'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clock'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clock'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clock]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ps2_clk'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ps2_data'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc]
+WARNING: [Vivado 12-584] No ports matched 'audPWM'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audPWM'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audEn'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'audEn'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'red[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[0]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[1]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hsync'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vsync'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 492.859 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 917.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 917.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 917.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 917.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 917.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 917.066 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 917.066 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: a0e1a904
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 917.066 ; gain = 0.000
+18 Infos, 43 Warnings, 43 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 917.066 ; gain = 424.207
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_opt.dcp' has been generated.
+Command: report_drc -file top_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 930.574 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 930.574 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 930.574 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 930.574 ; gain = 0.000
+30 Infos, 43 Warnings, 43 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 23:03:43 2017...
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Nov  9 23:03:49 2017
+# Process ID: 5688
+# Current directory: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top.vdi
+# Journal file: E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/led.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/sound.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/vga.xdc]
+Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc]
+Finished Parsing XDC File [E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/new/reset.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 268 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 32 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32X1S => RAM32X1S (RAMS32): 64 instances
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.335 . Memory (MB): peak = 514.664 ; gain = 7.637
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 23a1008e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 71 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 29b7c7de7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 7 cells and removed 7 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 244d9ae6f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.154 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 244d9ae6f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.234 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 244d9ae6f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1024.473 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 244d9ae6f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.248 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 16f82d0dc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1024.473 ; gain = 0.000
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1024.473 ; gain = 517.445
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_opt.dcp' has been generated.
+Command: report_drc -file top_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1024.473 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11d9d8bbf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1024.473 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17b9cc6c5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 213a32ed0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 213a32ed0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1024.473 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 213a32ed0
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1d9e6e5ca
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d9e6e5ca
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17c830ce5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1dd8edf85
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 14f60dac7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1520d98b5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 17686e357
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 283709dc7
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1dae2f599
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1dae2f599
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1bb1b05ec
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.473 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1bb1b05ec
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.473 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1611bc836
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1611bc836
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1041.512 ; gain = 17.039
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-5.807. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: f23ac6ea
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+Phase 4.1 Post Commit Optimization | Checksum: f23ac6ea
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: f23ac6ea
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: f23ac6ea
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 108432105
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 108432105
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+Ending Placer Task | Checksum: 45eb6a96
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1041.887 ; gain = 17.414
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1041.887 ; gain = 17.414
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 1041.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1041.887 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1041.887 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1041.887 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 99b66c0 ConstDB: 0 ShapeSum: 3c5003d6 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: bdb2859a
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: bdb2859a
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: bdb2859a
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: bdb2859a
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1206.590 ; gain = 164.703
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 256f0887c
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1206.590 ; gain = 164.703
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.408 | TNS=-2159.104| WHS=-0.145 | THS=-25.064|
+
+Phase 2 Router Initialization | Checksum: 244bb89a9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 17236d6b9
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 987
+ Number of Nodes with overlaps = 425
+ Number of Nodes with overlaps = 133
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.733 | TNS=-3289.914| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 133a78e57
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 514
+ Number of Nodes with overlaps = 202
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.988 | TNS=-2934.178| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 10feab57d
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 548
+ Number of Nodes with overlaps = 355
+ Number of Nodes with overlaps = 119
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.338 | TNS=-3162.886| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1fc2eabd4
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+Phase 4 Rip-up And Reroute | Checksum: 1fc2eabd4
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1f30bcd94
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.980 | TNS=-2865.004| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 23341b656
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 23341b656
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+Phase 5 Delay and Skew Optimization | Checksum: 23341b656
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c3457e5d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.967 | TNS=-2839.236| WHS=0.106  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1c3457e5d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+Phase 6 Post Hold Fix | Checksum: 1c3457e5d
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.600165 %
+  Global Horizontal Routing Utilization  = 0.728687 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 71.1712%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 79.4118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1b05d1761
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1b05d1761
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: e8d5f193
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.967 | TNS=-2839.236| WHS=0.106  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: e8d5f193
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 1206.590 ; gain = 164.703
+
+Routing Is Done.
+54 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1206.590 ; gain = 164.703
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.237 . Memory (MB): peak = 1206.590 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_routed.dcp' has been generated.
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/Vivado/Projects/ProjectA/ProjectA.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+61 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+couldn't open ".write_bitstream.begin.rst": permission denied
+    while executing
+"open $beginFile w"
+    (procedure "start_step" line 24)
+    invoked from within
+"start_step write_bitstream"
+    (file "top.tcl" line 137)
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 23:04:54 2017...

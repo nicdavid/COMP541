@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd"
+vhdl xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd"
+vhdl xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd"
+vhdl xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/lol/SPI_If.vhd"
+
+# Do not sort compile order
+nosort
