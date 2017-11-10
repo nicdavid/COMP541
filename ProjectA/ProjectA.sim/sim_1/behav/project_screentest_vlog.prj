@@ -5,6 +5,7 @@ sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/l
 sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/adder.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"
 sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/addsub.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"
 sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/new/bitmapmem.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"
+sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"
 sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/comparator.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"
 sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/new/controller.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"
 sv xil_defaultlib  "../../../ProjectA.srcs/sources_1/imports/sources_1/imports/sources_1/new/datapath.sv" --include "../../../ProjectA.srcs/sources_1/imports/new"

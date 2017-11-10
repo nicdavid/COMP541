@@ -39,9 +39,9 @@ module memIO # (
     
     //Screen Memory
     wire [31:0] smem_readdata;
-    screenmem #(.Nloc(1200), .Dbits(32), .initfile(smem_init)) smem(.clock(clock), .wr(smem_wr), .writeaddr(mem_addr),
-                                                                    .readaddr(smem_addr), .wd(mem_writedata), .charcode(smem_readdata));
-    assign charcode = smem_readdata[3:0];
+    screenmem #(.Nloc(1200), .Dbits(4), .initfile(smem_init)) smem(.clock(clock), .wr(smem_wr), .smem_addr(smem_addr),
+                                                                    .mem_addr(mem_addr), .wd(mem_writedata), 
+                                                                    .charcode(charcode), .mem_readdata(smem_readdata));
     
     
     
@@ -55,8 +55,8 @@ module memIO # (
     
     //Memory Mapper
     assign mem_readdata = (mem_addr[17:16] == 2'b01) ? dmem_readdata :
-                            (mem_addr[17:16] == 2'b10) ? charcode :
-                            (mem_addr[17:16] == 2'b11) ? ((mem_addr[3:2] == 2'b00) ? keyb_char : {accelX,accelY}) : 32'b0;
+                            (mem_addr[17:16] == 2'b10) ? smem_readdata :
+                            (mem_addr[17:16] == 2'b11) ? ((mem_addr[3:2] == 2'b00) ? keyb_char : {7'b0,accelX,7'b0,accelY}) : 32'b0;
                                 
     wire dmem_wr, smem_wr, sound_wr, lights_wr;
     assign dmem_wr = (mem_addr[17:16] == 2'b01 && mem_wr) ? 1'b1 : 1'b0;

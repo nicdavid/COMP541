@@ -4,10 +4,10 @@ Running: E:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 318661ae73
 Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port reset [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/accelerometer.sv:27]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 128 for port pc [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:63]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 11 for port writeaddr [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:42]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 256 for port pc [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:63]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port mem_addr [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:37]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port wd [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:43]
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port lights_val [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:49]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port sound_val [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:52]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -31,12 +31,12 @@ Compiling module xil_defaultlib.logical(N=32)
 Compiling module xil_defaultlib.ALU(N=32)
 Compiling module xil_defaultlib.datapath
 Compiling module xil_defaultlib.mips
-Compiling module xil_defaultlib.imem(Nloc=128,Dbits=32,initfile=...
-Compiling module xil_defaultlib.dmem(Nloc=32,Dbits=32,initfile="...
-Compiling module xil_defaultlib.screenmem(Nloc=1200,Dbits=32,ini...
+Compiling module xil_defaultlib.imem(Nloc=256,Dbits=32,initfile=...
+Compiling module xil_defaultlib.dmem(Nloc=16,Dbits=32,initfile="...
+Compiling module xil_defaultlib.screenmem(Nloc=1200,Dbits=4,init...
 Compiling module xil_defaultlib.LED_reg
 Compiling module xil_defaultlib.sound_reg
-Compiling module xil_defaultlib.memIO(Nloc=32,dmem_init="E:/Viva...
+Compiling module xil_defaultlib.memIO(dmem_init="E:/Vivado/Proje...
 Compiling module xil_defaultlib.xycounter(width=800,height=525)
 Compiling module xil_defaultlib.vgatimer
 Compiling module xil_defaultlib.bitmapmem(Nloc=1024,Dbits=12,ini...

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Nov 10 11:11:40 2017
+| Date         : Fri Nov 10 16:40:21 2017
 | Host         : DESKTOP-MH2MRKQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    45 |
-| Unused register locations in slices containing registers |    93 |
+| Number of unique control sets                            |    49 |
+| Unused register locations in slices containing registers |   128 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,82 +33,87 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              42 |           22 |
-| No           | No                    | Yes                    |              32 |           16 |
-| No           | Yes                   | No                     |              62 |           19 |
-| Yes          | No                    | No                     |              40 |           13 |
+| No           | No                    | No                     |              39 |           18 |
+| No           | No                    | Yes                    |              32 |           21 |
+| No           | Yes                   | No                     |             112 |           32 |
+| Yes          | No                    | No                     |              96 |           24 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              59 |           16 |
+| Yes          | Yes                   | No                     |             177 |           52 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------+------------------------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
-|      Clock Signal     |                              Enable Signal                             |                           Set/Reset Signal                          | Slice Load Count | Bel Load Count |
-+-----------------------+------------------------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
-|  clockdv/clk100       |                                                                        |                                                                     |                1 |              2 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                                     |                3 |              3 |
-|  clockdv/clkout0_BUFG |                                                                        |                                                                     |                1 |              3 |
-|  clockdv/clk12        | memIO/keyboard/bits                                                    | memIO/keyboard/count0                                               |                1 |              4 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/CE_Cnt_Num_Reads                        | memIO/accel/accel/ADXL_Control/Reset_Cnt_Num_Reads                  |                1 |              4 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/Cmd_Reg[0]_4                            | memIO/accel/accel/ADXL_Control/Cmd_Reg[0][6]_i_1_n_0                |                1 |              4 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | memIO/accel/accel/RESET_INT_reg_n_0                                 |                1 |              4 |
-|  clockdv/clk12        | memIO/keyboard/keyb_char[13]_i_1_n_0                                   | memIO/keyboard/keyb_char[29]_i_1_n_0                                |                1 |              5 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/Cmd_Reg[1][6]_i_2_n_0                   | memIO/accel/accel/ADXL_Control/Cmd_Reg[1]0_in[7]                    |                1 |              5 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_18                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_19                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_2                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        |                                                                        | memIO/accel/accel/ADXL_Control/SPI_Interface/SCLK_2X_DIV[5]_i_1_n_0 |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_3                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        |                                                                        | memIO/accel/accel/RESET_INT_reg_n_0                                 |                3 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_4                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_5                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_6                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/Cmd_Reg[2][6]_i_2_n_0                   | memIO/accel/accel/ADXL_Control/Cmd_Reg[2]_3[7]                      |                1 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_7                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_8                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_9                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_1                                                 |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_10                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_11                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_12                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_13                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_14                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_15                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_16                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | mips/dp/pcm/Q_reg[1]_17                                                |                                                                     |                2 |              6 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                                     |                2 |              7 |
-|  clockdv/clk12        | memIO/accel/accel/ADXL_Control/Shift_Cmd_Reg                           | memIO/accel/accel/RESET_INT_reg_n_0                                 |                1 |              7 |
-|  clockdv/clk12        | memIO/keyboard/keyb_char[13]_i_1_n_0                                   |                                                                     |                3 |              9 |
-|  clockdv/clk100       | display/vga/xy/Every4thTick                                            | display/vga/xy/x[9]_i_1_n_0                                         |                5 |             10 |
-|  clockdv/clk100       | display/vga/xy/y[9]_i_2_n_0                                            | display/vga/xy/y[9]_i_1_n_0                                         |                3 |             10 |
-|  clockdv/clk12        |                                                                        | memIO/accel/accel/ADXL_Control/Cnt_SS_Inactive0                     |                3 |             10 |
-|  clockdv/clk12        | memIO/keyboard/bits[9]_i_1_n_0                                         |                                                                     |                2 |             10 |
-|  clockdv/clk12        | memIO/keyboard/count0                                                  |                                                                     |                4 |             12 |
-|  clockdv/clk12        |                                                                        | memIO/accel/accel/ADXL_Control/Reset_Sample_Rate_Div                |                6 |             20 |
-|  clockdv/clk12        |                                                                        | memIO/keyboard/clear                                                |                5 |             20 |
-|  clockdv/clk12        | mips/dp/pcm/dmem_wr                                                    |                                                                     |                8 |             32 |
-|  clock_IBUF_BUFG      |                                                                        | reset_IBUF                                                          |               16 |             32 |
-|  clockdv/clk12        |                                                                        |                                                                     |               20 |             37 |
-|  clock_IBUF_BUFG      | mips/dp/pcm/controls[0]                                                |                                                                     |               12 |             96 |
-+-----------------------+------------------------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
++-----------------------+------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|      Clock Signal     |                           Enable Signal                          |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++-----------------------+------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  clockdv/clk100       |                                                                  |                                                               |                1 |              2 |
+|  clockdv/clkout0_BUFG |                                                                  |                                                               |                1 |              3 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0 | accel/accel/RESET_INT_reg_n_0                                 |                2 |              4 |
+|  clockdv/clk12        | mips/dp/pcm/sound_wr                                             |                                                               |                2 |              4 |
+|  clockdv/clk12        | keyboard/bits                                                    | keyboard/count0                                               |                1 |              4 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Enable_Sum                              | accel/accel/ADXL_Control/Reset_Cnt_Num_Reads                  |                1 |              4 |
+|  clockdv/clk12        | mips/dp/pcm/lights_wr                                            |                                                               |                1 |              4 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Cmd_Reg[0]_8                            | accel/accel/ADXL_Control/Cmd_Reg[0][6]_i_1_n_0                |                1 |              4 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Cmd_Reg[1][6]_i_2_n_0                   | accel/accel/ADXL_Control/Cmd_Reg[1]0_in[7]                    |                2 |              5 |
+|  clockdv/clk12        | keyboard/keyb_char[15]_i_1_n_0                                   | keyboard/keyb_char[31]_i_1_n_0                                |                2 |              5 |
+|  clockdv/clk12        |                                                                  | accel/accel/ADXL_Control/SPI_Interface/SCLK_2X_DIV[5]_i_1_n_0 |                2 |              6 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_0                                      |                                                               |                1 |              6 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Cmd_Reg[2][6]_i_2_n_0                   | accel/accel/ADXL_Control/Cmd_Reg[2]_7[7]                      |                1 |              6 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_1                                      |                                                               |                1 |              6 |
+|  clockdv/clk12        |                                                                  | accel/accel/RESET_INT_reg_n_0                                 |                3 |              6 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/SPI_Interface/MOSI_REG[7]_i_1_n_0       |                                                               |                2 |              7 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Shift_Cmd_Reg                           | accel/accel/RESET_INT_reg_n_0                                 |                1 |              7 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/SPI_Interface/DONE_1_i_1_n_0            |                                                               |                2 |              8 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/SPI_Interface/SHIFT_TICK_IN             |                                                               |                1 |              8 |
+|  clockdv/clk12        |                                                                  | accel/accel/Accel_Calculation/ACCEL_X_CLIP[8]                 |                3 |              9 |
+|  clockdv/clk12        |                                                                  | accel/accel/Accel_Calculation/ACCEL_Y_CLIP[8]                 |                3 |              9 |
+|  clockdv/clk12        | keyboard/keyb_char[15]_i_1_n_0                                   |                                                               |                3 |              9 |
+|  clockdv/clk100       | display/vga/xy/Every4thTick                                      | display/vga/xy/x[9]_i_1_n_0                                   |                2 |             10 |
+|  clockdv/clk100       | display/vga/xy/y[9]_i_2_n_0                                      | display/vga/xy/y[9]_i_1_n_0                                   |                4 |             10 |
+|  clockdv/clk12        |                                                                  | accel/accel/ADXL_Control/Cnt_SS_Inactive0                     |                3 |             10 |
+|  clockdv/clk12        | keyboard/bits[9]_i_1_n_0                                         |                                                               |                3 |             10 |
+|  clockdv/clk12        | keyboard/count0                                                  |                                                               |                2 |             12 |
+|  clockdv/clk12        | mips/dp/pcm/lights_wr                                            | mips/dp/pcm/LED_reg[15]                                       |                5 |             12 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_7                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_10                                     |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]                                        |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_3                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_4                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_5                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_6                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_8                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        | mips/dp/pcm/period_reg[1]_9                                      |                                                               |                4 |             16 |
+|  clockdv/clk12        |                                                                  | accel/accel/ADXL_Control/Reset_Sample_Rate_Div                |                5 |             20 |
+|  clockdv/clk12        |                                                                  | keyboard/clear                                                |                5 |             20 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/E[0]                                    | accel/accel/RESET_INT_reg_n_0                                 |                4 |             22 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Data_Ready_1                            | accel/accel/RESET_INT_reg_n_0                                 |                7 |             24 |
+|  clockdv/clk12        | mips/dp/pcm/sound_wr                                             | mips/dp/pcm/period_reg[31]_3                                  |               11 |             28 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/Enable_Sum                              | accel/accel/ADXL_Control/ACCEL_X_SUM0                         |                8 |             32 |
+|  clockdv/clk12        | mips/dp/pcm/dmem_wr                                              |                                                               |                8 |             32 |
+|  clockdv/clk12        |                                                                  | reset_IBUF                                                    |               21 |             32 |
+|  clockdv/clk100       |                                                                  | sound/clear                                                   |                8 |             32 |
+|  clockdv/clk12        |                                                                  |                                                               |               16 |             34 |
+|  clockdv/clk12        | accel/accel/ADXL_Control/SPI_Interface/Shift_Data_Reg            |                                                               |               10 |             42 |
+|  clockdv/clk12        | mips/dp/pcm/controls[0]                                          |                                                               |               12 |             96 |
++-----------------------+------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
 | 2      |                     1 |
-| 3      |                     2 |
-| 4      |                     4 |
+| 3      |                     1 |
+| 4      |                     6 |
 | 5      |                     2 |
-| 6      |                    22 |
+| 6      |                     5 |
 | 7      |                     2 |
-| 9      |                     1 |
+| 8      |                     2 |
+| 9      |                     3 |
 | 10     |                     4 |
-| 12     |                     1 |
-| 16+    |                     6 |
+| 12     |                     2 |
+| 16+    |                    21 |
 +--------+-----------------------+
 
 
