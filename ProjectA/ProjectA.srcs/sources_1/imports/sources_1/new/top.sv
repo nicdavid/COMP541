@@ -62,10 +62,10 @@ module top #(
     //Need to change the Nloc variable for the imem depending on the amount of instructions
     imem #(.Nloc(128), .Dbits(32), .initfile(imem_init)) imem(.pc(pc[31:0]), .instr(instr));
    
-    memIO #(.Nloc(16), .Dbits(32), .dmem_init(dmem_init), .smem_init(smem_init)) memIO(.clock(clock12), .mem_addr(mem_addr), .mem_wr(mem_wr),
-                                                    .keyb_char(keyb_char), .ps2_clk(ps2_clk), .ps2_data(ps2_data), .audPWM(audPWM), .audEn(audEn),
-                                                    .aclSCK(aclSCK), .aclMOSI(aclMOSI), .aclSS(aclSS), .aclMISO(aclMISO), .LED(LED), .mem_readdata(mem_readdata),
-                                                    .mem_writedata(mem_writedata), .smem_addr(smem_addr), .charcode(charcode));
+    memIO #(.Nloc(32), .Dbits(32), .dmem_init(dmem_init), .smem_init(smem_init)) memIO(.clock(clock12), .mem_addr(mem_addr), .mem_wr(mem_wr),
+                                                    .mem_readdata(mem_readdata), .mem_writedata(mem_writedata), .smem_addr(smem_addr), 
+                                                    .charcode(charcode), .keyb_char(keyb_char), .accelX(accelX), .accelY(accelY),
+                                                    .LED(LED), .audEn(audEn), .period(period));
 
     //VGA
     wire [11:0] RGB;
@@ -73,6 +73,24 @@ module top #(
     assign green = RGB[7:4];
     assign blue = RGB[3:0];
     vgadisplaydriver #(.bmem_init(bmem_init)) display(.clock(clock100), .RGB(RGB), .hsync(hsync), .vsync(vsync), .charcode(charcode), .screenaddr(smem_addr));
+    
+
+    //Accel
+    wire [8:0] accelX, accelY;
+    wire [11:0] accelTmp;
+    accelerometer accel(clock, aclSCK, aclMOSI, aclMISO, aclSS, accelX, accelY, accelTmp);
+
+        
+    //Sound
+    //These are periods (in units of 10 ns) for the notes on the normal C4 scale,
+    //   i.e.:  C4, D4, E4, F4, G4, A4, B4, C5
+    wire [31:0] notes_periods[0:7] = {382219, 340530, 303370, 286344, 255102, 227273, 202478, 191113};
+    wire unsigned [31:0] period;
+    montek_sound_Nexys4 sound(clock, period, audPWM);
+        
+        
+    //Keyboard
+    keyboard keyboard(.clock(clock), .ps2_clk(ps2_clk), .ps2_data(ps2_data), .keyb_char(keyb_char));
     
 
 endmodule

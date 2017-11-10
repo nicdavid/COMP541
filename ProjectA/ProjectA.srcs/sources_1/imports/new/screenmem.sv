@@ -10,7 +10,8 @@ module screenmem #(
     input wire clock,
     input wire wr,
     input wire [Dbits-1:0] wd,
-    input wire [$clog2(Nloc)-1:0] addr,
+    input wire [$clog2(Nloc)-1:0] readaddr,
+    input wire [$clog2(Nloc)-1:0] writeaddr,
     output logic [Dbits-1:0] charcode
     );
     
@@ -20,10 +21,10 @@ module screenmem #(
     
     always_ff @(posedge clock)
         if (wr)
-            mem[addr] <= wd;
+            mem[writeaddr] <= wd;
     
     //Sets the character code
-    assign charcode = mem[addr];
+    assign charcode = mem[readaddr];
     
     
 endmodule

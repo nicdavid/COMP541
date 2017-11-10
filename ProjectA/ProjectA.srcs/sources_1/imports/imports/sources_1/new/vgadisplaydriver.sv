@@ -5,7 +5,7 @@
 
 module vgadisplaydriver #(
     parameter sNloc = 1200,
-    parameter sDbits = 2,
+    parameter sDbits = 4,
     parameter bNloc = 1024,
     parameter bDbits = 12,
     parameter bmem_init

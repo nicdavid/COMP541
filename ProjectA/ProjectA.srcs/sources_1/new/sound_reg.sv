@@ -5,9 +5,9 @@
 module sound_reg(
     input wire clock,
     input wire sound_wr,
-    input wire sound_val,
+    input wire [31:0] sound_val,
     output logic audEn,
-    output logic [15:0] period
+    output logic [31:0] period
     );
     
     //Sound

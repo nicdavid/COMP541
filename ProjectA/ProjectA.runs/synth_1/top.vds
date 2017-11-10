@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Nov 10 00:17:19 2017
-# Process ID: 5440
+# Start of session at: Fri Nov 10 11:10:08 2017
+# Process ID: 8636
 # Current directory: E:/Vivado/Projects/ProjectA/ProjectA.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: E:/Vivado/Projects/ProjectA/ProjectA.runs/synth_1/top.vds
@@ -15,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10688 
+INFO: Helper process launched with PID 11052 
 WARNING: [Synth 8-2611] redeclaration of ansi port clkin is not allowed [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:13]
 WARNING: [Synth 8-976] clkin has already been declared [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:13]
 WARNING: [Synth 8-2654] second declaration of clkin ignored [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:13]
 INFO: [Synth 8-994] clkin is declared here [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:11]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 316.289 ; gain = 86.008
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 317.180 ; gain = 86.375
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:4]
 	Parameter imem_init bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/full_imem.mem - type: string 
@@ -113,24 +113,24 @@ INFO: [Synth 8-3876] $readmem data file 'E:/Vivado/Projects/ProjectA/ProjectA.sr
 INFO: [Synth 8-256] done synthesizing module 'imem' (18#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/imem.sv:5]
 WARNING: [Synth 8-689] width (32) of port connection 'pc' does not match port width (128) of module 'imem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:63]
 INFO: [Synth 8-638] synthesizing module 'memIO' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:5]
-	Parameter Nloc bound to: 16 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
 	Parameter Dbits bound to: 32 - type: integer 
 	Parameter dmem_init bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/full_dmem.mem - type: string 
 	Parameter smem_init bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/smem_screentest.mem - type: string 
 INFO: [Synth 8-638] synthesizing module 'dmem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/dmem.sv:4]
-	Parameter Nloc bound to: 16 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
 	Parameter Dbits bound to: 32 - type: integer 
 	Parameter initfile bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/full_dmem.mem - type: string 
 INFO: [Synth 8-3876] $readmem data file 'E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/full_dmem.mem' is read successfully [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/dmem.sv:17]
 INFO: [Synth 8-256] done synthesizing module 'dmem' (19#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/dmem.sv:4]
-WARNING: [Synth 8-689] width (32) of port connection 'mem_addr' does not match port width (16) of module 'dmem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:40]
 INFO: [Synth 8-638] synthesizing module 'screenmem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/new/screenmem.sv:5]
 	Parameter Nloc bound to: 1200 - type: integer 
-	Parameter Dbits bound to: 4 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
 	Parameter initfile bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/smem_screentest.mem - type: string 
-INFO: [Synth 8-3876] $readmem data file 'E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/smem_screentest.mem' is read successfully [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/new/screenmem.sv:19]
+INFO: [Synth 8-3876] $readmem data file 'E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/smem_screentest.mem' is read successfully [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/new/screenmem.sv:20]
 INFO: [Synth 8-256] done synthesizing module 'screenmem' (20#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/new/screenmem.sv:5]
-WARNING: [Synth 8-689] width (32) of port connection 'wd' does not match port width (4) of module 'screenmem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:45]
+WARNING: [Synth 8-689] width (32) of port connection 'writeaddr' does not match port width (11) of module 'screenmem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:45]
+WARNING: [Synth 8-689] width (33) of port connection 'charcode' does not match port width (32) of module 'screenmem' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:46]
 INFO: [Synth 8-638] synthesizing module 'accelerometer' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/accelerometer.sv:13]
 INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd:69]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
@@ -175,21 +175,21 @@ INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (24#1) [E:/Vivad
 INFO: [Synth 8-256] done synthesizing module 'accelerometer' (25#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/accelerometer.sv:13]
 INFO: [Synth 8-638] synthesizing module 'sound_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/sound_reg.sv:5]
 INFO: [Synth 8-256] done synthesizing module 'sound_reg' (26#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/sound_reg.sv:5]
-WARNING: [Synth 8-689] width (32) of port connection 'sound_val' does not match port width (1) of module 'sound_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:61]
-WARNING: [Synth 8-689] width (32) of port connection 'period' does not match port width (16) of module 'sound_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:61]
+WARNING: [Synth 8-689] width (32) of port connection 'sound_val' does not match port width (1) of module 'sound_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:62]
+WARNING: [Synth 8-689] width (32) of port connection 'period' does not match port width (16) of module 'sound_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:62]
 INFO: [Synth 8-638] synthesizing module 'montek_sound_Nexys4' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/montek_sound_Nexys4.sv:21]
 INFO: [Synth 8-256] done synthesizing module 'montek_sound_Nexys4' (27#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/montek_sound_Nexys4.sv:21]
 INFO: [Synth 8-638] synthesizing module 'keyboard' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/keyboard.sv:17]
 INFO: [Synth 8-256] done synthesizing module 'keyboard' (28#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/keyboard.sv:17]
 INFO: [Synth 8-638] synthesizing module 'LED_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/LED_reg.sv:5]
 INFO: [Synth 8-256] done synthesizing module 'LED_reg' (29#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/LED_reg.sv:5]
-WARNING: [Synth 8-689] width (32) of port connection 'lights_val' does not match port width (16) of module 'LED_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3848] Net sound_val in module/entity memIO does not have driver. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:54]
-WARNING: [Synth 8-3848] Net lights_val in module/entity memIO does not have driver. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:54]
+WARNING: [Synth 8-689] width (32) of port connection 'lights_val' does not match port width (16) of module 'LED_reg' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3848] Net sound_val in module/entity memIO does not have driver. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:55]
+WARNING: [Synth 8-3848] Net lights_val in module/entity memIO does not have driver. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:55]
 INFO: [Synth 8-256] done synthesizing module 'memIO' (30#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:5]
 INFO: [Synth 8-638] synthesizing module 'vgadisplaydriver' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/imports/sources_1/new/vgadisplaydriver.sv:6]
 	Parameter sNloc bound to: 1200 - type: integer 
-	Parameter sDbits bound to: 2 - type: integer 
+	Parameter sDbits bound to: 4 - type: integer 
 	Parameter bNloc bound to: 1024 - type: integer 
 	Parameter bDbits bound to: 12 - type: integer 
 	Parameter bmem_init bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/bmem_screentest.mem - type: string 
@@ -206,9 +206,10 @@ INFO: [Synth 8-638] synthesizing module 'bitmapmem' [E:/Vivado/Projects/ProjectA
 INFO: [Synth 8-3876] $readmem data file 'E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/bmem_screentest.mem' is read successfully [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/new/bitmapmem.sv:16]
 INFO: [Synth 8-256] done synthesizing module 'bitmapmem' (33#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/new/bitmapmem.sv:5]
 INFO: [Synth 8-256] done synthesizing module 'vgadisplaydriver' (34#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/imports/sources_1/new/vgadisplaydriver.sv:6]
-WARNING: [Synth 8-689] width (4) of port connection 'charcode' does not match port width (2) of module 'vgadisplaydriver' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:75]
 WARNING: [Synth 8-3848] Net keyb_char in module/entity top does not have driver. [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:40]
 INFO: [Synth 8-256] done synthesizing module 'top' (35#1) [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:4]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[3]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[2]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[11]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[10]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[9]
@@ -221,6 +222,22 @@ WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[2]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[1]
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[0]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[16]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[15]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[14]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[13]
@@ -230,23 +247,8 @@ WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[10]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[9]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[8]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[7]
-WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[6]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[1]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[0]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[31]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[30]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[29]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[28]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[27]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[26]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[25]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[24]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[23]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[22]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[21]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[20]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[19]
-WARNING: [Synth 8-3331] design memIO has unconnected port mem_addr[18]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[127]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[126]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[125]
@@ -306,12 +308,9 @@ WARNING: [Synth 8-3331] design imem has unconnected port pc[72]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[71]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[70]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[69]
-WARNING: [Synth 8-3331] design imem has unconnected port pc[68]
-WARNING: [Synth 8-3331] design imem has unconnected port pc[67]
-WARNING: [Synth 8-3331] design imem has unconnected port pc[66]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 347.098 ; gain = 116.816
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 347.988 ; gain = 117.184
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -320,23 +319,23 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin sound_reg:sound_val to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:61]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[15] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[14] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[13] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[12] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[11] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[10] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[9] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[8] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[7] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[6] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[5] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[4] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[3] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[2] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[1] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
-WARNING: [Synth 8-3295] tying undriven pin led:lights_val[0] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:70]
+WARNING: [Synth 8-3295] tying undriven pin sound_reg:sound_val to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:62]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[15] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[14] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[13] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[12] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[11] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[10] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[9] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[8] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[7] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[6] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[5] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[4] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[3] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[2] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[1] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin led:lights_val[0] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/memIO.sv:71]
 WARNING: [Synth 8-3295] tying undriven pin memIO:keyb_char[31] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:65]
 WARNING: [Synth 8-3295] tying undriven pin memIO:keyb_char[30] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:65]
 WARNING: [Synth 8-3295] tying undriven pin memIO:keyb_char[29] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:65]
@@ -370,7 +369,7 @@ WARNING: [Synth 8-3295] tying undriven pin memIO:keyb_char[2] to constant 0 [E:/
 WARNING: [Synth 8-3295] tying undriven pin memIO:keyb_char[1] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:65]
 WARNING: [Synth 8-3295] tying undriven pin memIO:keyb_char[0] to constant 0 [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:65]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 347.098 ; gain = 116.816
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 347.988 ; gain = 117.184
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -416,22 +415,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   INV => LUT1: 1 instances
   MMCME2_BASE => MMCME2_ADV: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 668.355 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 668.238 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 668.355 ; gain = 438.074
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 668.238 ; gain = 437.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 668.355 ; gain = 438.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 668.238 ; gain = 437.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 668.355 ; gain = 438.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 668.238 ; gain = 437.434
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
 WARNING: [Synth 8-6014] Unused sequential element StC_reg was removed.  [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:248]
@@ -539,7 +538,7 @@ stadxlwaitsampleratetick |                             0100 |                   
 INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
 WARNING: [Synth 8-6014] Unused sequential element StC_Adxl_Ctrl_reg was removed.  [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:429]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 668.355 ; gain = 438.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 668.238 ; gain = 437.434
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -980,7 +979,7 @@ INFO: [Synth 8-3886] merging instance 'memIO/keyboard/keyb_char_reg[27]' (FDE) t
 INFO: [Synth 8-3886] merging instance 'memIO/keyboard/keyb_char_reg[24]' (FDE) to 'memIO/keyboard/keyb_char_reg[25]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\memIO/keyboard/keyb_char_reg[25] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 668.355 ; gain = 438.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 668.238 ; gain = 437.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -998,13 +997,13 @@ ROM:
 
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+--------------------+-----------+----------------------+-------------------------------------------------------------+
-|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives                                                  | 
-+------------+--------------------+-----------+----------------------+-------------------------------------------------------------+
-|top         | mips/dp/rf/rf_reg  | Implied   | 32 x 32              | RAM32M x 12                                                 | 
-|top         | memIO/smem/mem_reg | Implied   | 2 K x 4              | RAM16X1S x 4  RAM32X1S x 4  RAM128X1S x 4  RAM256X1S x 16   | 
-|top         | memIO/dmem/mem_reg | Implied   | 16 x 32              | RAM16X1S x 32                                               | 
-+------------+--------------------+-----------+----------------------+-------------------------------------------------------------+
++------------+--------------------+-----------+----------------------+------------------------------+
+|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives                   | 
++------------+--------------------+-----------+----------------------+------------------------------+
+|top         | mips/dp/rf/rf_reg  | Implied   | 32 x 32              | RAM32M x 12                  | 
+|top         | memIO/smem/mem_reg | Implied   | 2 K x 4              | RAM64X1D x 19  RAM64M x 19   | 
+|top         | memIO/dmem/mem_reg | Implied   | 32 x 32              | RAM32X1S x 32                | 
++------------+--------------------+-----------+----------------------+------------------------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1020,13 +1019,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 668.355 ; gain = 438.074
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 668.238 ; gain = 437.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1038,7 +1037,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1062,7 +1061,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1075,7 +1074,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1087,25 +1086,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1140,75 +1139,73 @@ Report Cell Usage:
 |3     |CARRY4      |    29|
 |4     |INV         |     1|
 |5     |LUT1        |    80|
-|6     |LUT2        |    48|
-|7     |LUT3        |    93|
-|8     |LUT4        |    92|
-|9     |LUT5        |   163|
-|10    |LUT6        |   562|
+|6     |LUT2        |    47|
+|7     |LUT3        |    95|
+|8     |LUT4        |    86|
+|9     |LUT5        |   172|
+|10    |LUT6        |   584|
 |11    |MMCME2_BASE |     1|
-|12    |MUXF7       |    42|
-|13    |RAM128X1S   |     4|
-|14    |RAM16X1S    |    36|
-|15    |RAM256X1S   |    16|
-|16    |RAM32M      |    12|
-|17    |RAM32X1S    |     4|
-|18    |SRL16E      |     1|
-|19    |FDCE        |    31|
-|20    |FDPE        |     1|
-|21    |FDRE        |   199|
-|22    |FDSE        |     4|
-|23    |IBUF        |     5|
-|24    |OBUF        |    35|
+|12    |MUXF7       |    46|
+|13    |RAM32M      |    12|
+|14    |RAM32X1S    |    32|
+|15    |RAM64M      |    19|
+|16    |RAM64X1D    |    19|
+|17    |SRL16E      |     1|
+|18    |FDCE        |    31|
+|19    |FDPE        |     1|
+|20    |FDRE        |   199|
+|21    |FDSE        |     4|
+|22    |IBUF        |     5|
+|23    |OBUF        |    35|
 +------+------------+------+
 
 Report Instance Areas: 
 +------+------------------------+--------------------+------+
 |      |Instance                |Module              |Cells |
 +------+------------------------+--------------------+------+
-|1     |top                     |                    |  1465|
+|1     |top                     |                    |  1505|
 |2     |  imem                  |imem                |    31|
 |3     |  clockdv               |clockdivider_Nexys4 |    14|
-|4     |  display               |vgadisplaydriver    |    94|
-|5     |    vga                 |vgatimer            |    91|
-|6     |      xy                |xycounter           |    87|
-|7     |  memIO                 |memIO               |   470|
+|4     |  display               |vgadisplaydriver    |    78|
+|5     |    vga                 |vgatimer            |    75|
+|6     |      xy                |xycounter           |    71|
+|7     |  memIO                 |memIO               |   511|
 |8     |    accel               |accelerometer       |   301|
 |9     |      accel             |AccelerometerCtl    |   301|
 |10    |        ADXL_Control    |ADXL362Ctrl         |   277|
 |11    |          SPI_Interface |SPI_If              |    69|
-|12    |    dmem                |dmem                |    34|
-|13    |    keyboard            |keyboard            |   103|
-|14    |    smem                |screenmem           |    32|
-|15    |  mips                  |mips                |   815|
-|16    |    dp                  |datapath            |   815|
-|17    |      pcm               |programcounter      |   786|
+|12    |    dmem                |dmem                |    36|
+|13    |    keyboard            |keyboard            |   105|
+|14    |    smem                |screenmem           |    69|
+|15    |  mips                  |mips                |   830|
+|16    |    dp                  |datapath            |   830|
+|17    |      pcm               |programcounter      |   801|
 |18    |      rf                |register_file       |    12|
 +------+------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.781 ; gain = 523.500
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 403 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 753.781 ; gain = 202.242
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 753.781 ; gain = 523.500
+Synthesis finished with 0 errors, 0 critical warnings and 398 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 759.738 ; gain = 208.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 759.738 ; gain = 528.934
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 78 instances were transformed.
+  A total of 88 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
   INV => LUT1: 1 instances
   MMCME2_BASE => MMCME2_ADV: 1 instances
-  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 4 instances
-  RAM16X1S => RAM32X1S (RAMS32): 36 instances
-  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 16 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
-  RAM32X1S => RAM32X1S (RAMS32): 4 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 19 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 19 instances
 
-187 Infos, 307 Warnings, 0 Critical Warnings and 0 Errors encountered.
+187 Infos, 306 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 753.781 ; gain = 532.262
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 759.738 ; gain = 536.695
 INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 753.781 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 00:18:02 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 759.738 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 11:10:52 2017...
