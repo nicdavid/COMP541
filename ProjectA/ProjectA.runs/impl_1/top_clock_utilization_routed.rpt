@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Fri Nov 10 16:40:44 2017
+| Date         : Mon Nov 13 12:29:28 2017
 | Host         : DESKTOP-MH2MRKQ running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file top_clock_utilization_routed.rpt
 | Design       : top
@@ -47,8 +47,8 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------+-----------------------------+----------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock    | Driver Pin                  | Net                  |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------+-----------------------------+----------------------+
-| g0        | src0      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y16 | n/a          |                 1 |         495 |               0 |       80.000 | clkout3  | clockdv/buf12/O             | clockdv/clk12        |
-| g1        | src0      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |          54 |               0 |       10.000 | clkout0  | clockdv/buf100/O            | clockdv/clk100       |
+| g0        | src0      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y16 | n/a          |                 2 |         482 |               0 |       80.000 | clkout3  | clockdv/buf12/O             | clockdv/clk12        |
+| g1        | src0      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |          74 |               0 |       10.000 | clkout0  | clockdv/buf100/O            | clockdv/clk100       |
 | g2        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |                 1 |           3 |               0 |       10.000 | clkout0  | clockdv/clkout0_BUFG_inst/O | clockdv/clkout0_BUFG |
 | g3        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y19 | n/a          |                 1 |           1 |               0 |       10.000 | clkfbout | clockdv/bufclkfb/O          | clockdv/clkfbin      |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------+-----------------------------+----------------------+
@@ -81,9 +81,9 @@ Table of Contents
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1500 |    0 |   550 |    0 |    40 |    0 |    20 |    0 |    40 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2000 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  453 |  1900 |  105 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  439 |  1900 |  123 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2000 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    3 |  1900 |    0 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   24 |  1900 |   20 |   650 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   600 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |  1350 |    0 |   500 |    0 |    30 |    0 |    15 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
@@ -97,7 +97,7 @@ Table of Contents
 |    | X0 | X1 |
 +----+----+----+
 | Y3 |  0 |  0 |
-| Y2 |  0 |  2 |
+| Y2 |  0 |  3 |
 | Y1 |  0 |  2 |
 | Y0 |  0 |  0 |
 +----+----+----+
@@ -109,7 +109,7 @@ Table of Contents
 +-----------+-----------------+-------------------+---------+-------------+----------------+-------------+----------+----------------+----------+---------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock   | Period (ns) | Waveform (ns)  | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
 +-----------+-----------------+-------------------+---------+-------------+----------------+-------------+----------+----------------+----------+---------------+
-| g0        | BUFGCTRL/O      | n/a               | clkout3 |      80.000 | {0.000 40.000} |         407 |        0 |              0 |        0 | clockdv/clk12 |
+| g0        | BUFGCTRL/O      | n/a               | clkout3 |      80.000 | {0.000 40.000} |         394 |        0 |              0 |        0 | clockdv/clk12 |
 +-----------+-----------------+-------------------+---------+-------------+----------------+-------------+----------+----------------+----------+---------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -121,8 +121,8 @@ Table of Contents
 |    | X0 | X1   |
 +----+----+------+
 | Y3 |  0 |    0 |
-| Y2 |  0 |    0 |
-| Y1 |  0 |  407 |
+| Y2 |  0 |   21 |
+| Y1 |  0 |  373 |
 | Y0 |  0 |    0 |
 +----+----+------+
 
@@ -133,7 +133,7 @@ Table of Contents
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+----------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock   | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net            |
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+----------------+
-| g1        | BUFGCTRL/O      | n/a               | clkout0 |      10.000 | {0.000 5.000} |          54 |        0 |              0 |        0 | clockdv/clk100 |
+| g1        | BUFGCTRL/O      | n/a               | clkout0 |      10.000 | {0.000 5.000} |          74 |        0 |              0 |        0 | clockdv/clk100 |
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+----------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -146,7 +146,7 @@ Table of Contents
 +----+----+-----+
 | Y3 |  0 |   0 |
 | Y2 |  0 |   0 |
-| Y1 |  0 |  54 |
+| Y1 |  0 |  74 |
 | Y0 |  0 |   0 |
 +----+----+-----+
 
@@ -205,8 +205,8 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net            |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------+
-| g0        | n/a   | BUFGCTRL/O      | None       |         407 |               0 | 399 |      8 |    0 |   0 |  0 |    0 |   0 |       0 | clockdv/clk12  |
-| g1        | n/a   | BUFGCTRL/O      | None       |          54 |               0 |  54 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clockdv/clk100 |
+| g0        | n/a   | BUFGCTRL/O      | None       |         373 |               0 | 365 |      8 |    0 |   0 |  0 |    0 |   0 |       0 | clockdv/clk12  |
+| g1        | n/a   | BUFGCTRL/O      | None       |          74 |               0 |  74 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clockdv/clk100 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -219,6 +219,7 @@ Table of Contents
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                  |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------+
+| g0        | n/a   | BUFGCTRL/O      | None       |          21 |               0 | 21 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clockdv/clk12        |
 | g2        | n/a   | BUFG/O          | None       |           3 |               0 |  3 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | clockdv/clkout0_BUFG |
 | g3        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | clockdv/clkfbin      |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------+
@@ -250,7 +251,7 @@ resize_pblock [get_pblocks {CLKAG_clockdv/clkout0_BUFG}] -add {CLOCKREGION_X1Y2:
 #startgroup
 create_pblock {CLKAG_clockdv/clk12}
 add_cells_to_pblock [get_pblocks  {CLKAG_clockdv/clk12}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clockdv/clk12"}]]]
-resize_pblock [get_pblocks {CLKAG_clockdv/clk12}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_clockdv/clk12}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
 # Clock net "clockdv/clk100" driven by instance "clockdv/buf100" located at site "BUFGCTRL_X0Y17"

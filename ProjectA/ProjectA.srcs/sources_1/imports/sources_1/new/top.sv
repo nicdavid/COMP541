@@ -9,6 +9,10 @@ module top #(
     parameter bmem_init="E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/bmem_screentest.mem"
 )(
     input wire clock, reset,
+    
+    //Display
+    output wire [7:0] segments,
+    output wire [7:0] digitselect,
 
     //Keyboard
     input wire ps2_clk, ps2_data,
@@ -78,6 +82,9 @@ module top #(
     wire [8:0] accelX, accelY;
     wire [11:0] accelTmp;
     accelerometer accel(clock12, aclSCK, aclMOSI, aclMISO, aclSS, accelX, accelY, accelTmp);
+    
+    //Debug Purposes
+    display8digit disp({7'b0,accelX,7'b0,accelY}, clock100, segments, digitselect);
 
         
     //Sound

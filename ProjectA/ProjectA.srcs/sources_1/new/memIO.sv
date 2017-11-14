@@ -57,6 +57,7 @@ module memIO # (
     assign mem_readdata = (mem_addr[17:16] == 2'b01) ? dmem_readdata :
                             (mem_addr[17:16] == 2'b10) ? smem_readdata :
                             (mem_addr[17:16] == 2'b11) ? ((mem_addr[3:2] == 2'b00) ? keyb_char : {7'b0,accelX,7'b0,accelY}) : 32'b0;
+    
                                 
     wire dmem_wr, smem_wr, sound_wr, lights_wr;
     assign dmem_wr = (mem_addr[17:16] == 2'b01 && mem_wr) ? 1'b1 : 1'b0;

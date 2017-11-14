@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ADXL362Ctrl
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity AccelArithmetics
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity AccelerometerCtl
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/SPI_If.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SPI_If

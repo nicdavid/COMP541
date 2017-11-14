@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Fri Nov 10 16:40:43 2017
+| Date             : Mon Nov 13 12:29:28 2017
 | Host             : DESKTOP-MH2MRKQ running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.217 |
-| Dynamic (W)              | 0.120 |
+| Total On-Chip Power (W)  | 0.220 |
+| Dynamic (W)              | 0.122 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.0  |
@@ -50,19 +50,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        6 |       --- |             --- |
-| Slice Logic              |     0.003 |     2183 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1041 |     63400 |            1.64 |
+| Slice Logic              |     0.003 |     2372 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1133 |     63400 |            1.79 |
 |   LUT as Distributed RAM |    <0.001 |      230 |     19000 |            1.21 |
-|   F7/F8 Muxes            |    <0.001 |      119 |     63400 |            0.19 |
-|   CARRY4                 |    <0.001 |       73 |     15850 |            0.46 |
-|   Register               |    <0.001 |      456 |    126800 |            0.36 |
-|   Others                 |     0.000 |       27 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |      147 |     63400 |            0.23 |
+|   CARRY4                 |    <0.001 |       75 |     15850 |            0.47 |
+|   Register               |    <0.001 |      463 |    126800 |            0.37 |
+|   Others                 |     0.000 |       30 |       --- |             --- |
 |   LUT as Shift Register  |     0.000 |        6 |     19000 |            0.03 |
-| Signals                  |     0.003 |     1649 |       --- |             --- |
+| Signals                  |     0.003 |     1706 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
-| I/O                      |     0.006 |       40 |       210 |           19.05 |
+| I/O                      |     0.009 |       56 |       210 |           26.67 |
 | Static Power             |     0.097 |          |           |                 |
-| Total                    |     0.217 |          |           |                 |
+| Total                    |     0.220 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.024 |       0.008 |      0.015 |
+| Vccint    |       1.000 |     0.023 |       0.008 |      0.015 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
-| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
+| Vcco33    |       3.300 |     0.006 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -144,17 +144,17 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| top                          |     0.120 |
+| top                          |     0.122 |
 |   accel                      |    <0.001 |
 |     accel                    |    <0.001 |
 |       ADXL_Control           |    <0.001 |
 |         SPI_Interface        |    <0.001 |
 |       Accel_Calculation      |    <0.001 |
 |   clockdv                    |     0.107 |
+|   disp                       |    <0.001 |
 |   display                    |    <0.001 |
 |     vga                      |    <0.001 |
 |       xy                     |    <0.001 |
-|   imem                       |    <0.001 |
 |   keyboard                   |    <0.001 |
 |   memIO                      |    <0.001 |
 |     dmem                     |    <0.001 |

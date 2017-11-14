@@ -47,6 +47,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -55,6 +56,7 @@ set rc [catch {
   set_property ip_output_repo E:/Vivado/Projects/ProjectA/ProjectA.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet E:/Vivado/Projects/ProjectA/ProjectA.runs/synth_1/top.dcp
+  read_xdc E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/imports/new/segdisplay.xdc
   read_xdc E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/accel.xdc
   read_xdc E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/clock.xdc
   read_xdc E:/Vivado/Projects/ProjectA/ProjectA.srcs/constrs_1/imports/constrs_1/new/keyboard.xdc
