@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Nov 13 12:27:55 2017">
+<application name="pa" timeStamp="Tue Nov 14 19:33:59 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="efd779e83cf242b8b2652baad863fe06" type="ProjectID"/>
-<property name="ProjectIteration" value="57" type="ProjectIteration"/>
+<property name="ProjectIteration" value="62" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -27,15 +27,15 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="EditSimulationSets" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="11" type="JavaHandler"/>
 <property name="LaunchOpenTarget" value="2" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="28" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="30" type="JavaHandler"/>
 <property name="MakeActiveSimSet" value="2" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="49" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="52" type="JavaHandler"/>
 <property name="OpenProject" value="1" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="26" type="JavaHandler"/>
-<property name="ProgramDevice" value="30" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="28" type="JavaHandler"/>
+<property name="ProgramDevice" value="32" type="JavaHandler"/>
 <property name="RefreshDevice" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="58" type="JavaHandler"/>
+<property name="RunBitgen" value="63" type="JavaHandler"/>
 <property name="RunImplementation" value="4" type="JavaHandler"/>
 <property name="RunSchematic" value="4" type="JavaHandler"/>
 <property name="RunSynthesis" value="7" type="JavaHandler"/>
@@ -77,7 +77,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FindAndReplaceAllDialog_CLOSE" value="1" type="GuiResourceData"/>
 <property name="FloatingTopDialog_AUTOMATICALLY_PICK_NEW_TOP_MODULE" value="1" type="GuiResourceData"/>
 <property name="FloatingTopDialog_SPECIFY_NEW_TOP_MODULE" value="1" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="289" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="302" type="GuiResourceData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_FIT" value="118" type="GuiResourceData"/>
@@ -122,11 +122,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PartChooser_PARTS" value="6" type="GuiResourceData"/>
 <property name="PartChooser_PART_PACKAGE_CHOOSER" value="2" type="GuiResourceData"/>
 <property name="PartChooser_PART_SPEED_CHOOSER" value="2" type="GuiResourceData"/>
-<property name="ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET" value="20" type="GuiResourceData"/>
+<property name="ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET" value="21" type="GuiResourceData"/>
 <property name="ProgramDebugTab_OPEN_TARGET" value="1" type="GuiResourceData"/>
 <property name="ProgramDebugTab_PROGRAM_DEVICE" value="1" type="GuiResourceData"/>
 <property name="ProgramDebugTab_REFRESH_DEVICE" value="2" type="GuiResourceData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="24" type="GuiResourceData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="26" type="GuiResourceData"/>
 <property name="ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE" value="1" type="GuiResourceData"/>
 <property name="ProgressDialog_BACKGROUND" value="1" type="GuiResourceData"/>
 <property name="ProgressDialog_CANCEL" value="6" type="GuiResourceData"/>
@@ -139,7 +139,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RemoveSourcesDialog_ALSO_DELETE" value="2" type="GuiResourceData"/>
 <property name="RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES" value="2" type="GuiResourceData"/>
 <property name="SaveProjectUtils_CANCEL" value="1" type="GuiResourceData"/>
-<property name="SaveProjectUtils_SAVE" value="3" type="GuiResourceData"/>
+<property name="SaveProjectUtils_SAVE" value="4" type="GuiResourceData"/>
 <property name="SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT" value="1" type="GuiResourceData"/>
 <property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="1" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_DIRECTORIES" value="1" type="GuiResourceData"/>
@@ -149,8 +149,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_IP_HIERARCHY" value="15" type="GuiResourceData"/>
 <property name="SrcMenu_OPEN_SELECTED_SOURCE_FILES" value="1" type="GuiResourceData"/>
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="13" type="GuiResourceData"/>
-<property name="SyntheticaStateMonitor_CANCEL" value="11" type="GuiResourceData"/>
-<property name="TaskBanner_CLOSE" value="22" type="GuiResourceData"/>
+<property name="SyntheticaStateMonitor_CANCEL" value="12" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="23" type="GuiResourceData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="159" type="GuiResourceData"/>
 </item>
 </section>

@@ -18,13 +18,13 @@ module sound_reg(
     always_ff @(posedge clock) begin
         if (sound_wr) begin
             audEn <= 1'b1;
-            period <= sound_val[25:16] < 9'b0_0000_0001 ? notes_periods[0] :
-                      sound_val[25:16] < 9'b0_0000_0010 ? notes_periods[1] :
-                      sound_val[25:16] < 9'b0_0000_0100 ? notes_periods[2] :
-                      sound_val[25:16] < 9'b0_0000_1000 ? notes_periods[3] :
-                      sound_val[25:16] < 9'b0_0001_0000 ? notes_periods[4] :
-                      sound_val[25:16] < 9'b0_0010_0000 ? notes_periods[5] :
-                      sound_val[25:16] < 9'b0_0100_0000 ? notes_periods[6] : notes_periods[7];
+            period <= sound_val < 32'b0000_0000_0000_0000_0000_0000_0100_0000 ? notes_periods[0] :
+                      sound_val < 32'b0000_0000_0000_0000_0000_0000_1000_0000 ? notes_periods[1] :
+                      sound_val < 32'b0000_0000_0000_0000_0000_0000_1100_0000 ? notes_periods[2] :
+                      sound_val < 32'b0000_0000_0000_0000_0000_0001_0000_0000 ? notes_periods[3] :
+                      sound_val < 32'b0000_0000_0000_0000_0000_0001_0100_0000 ? notes_periods[4] :
+                      sound_val < 32'b0000_0000_0000_0000_0000_0001_1000_0000 ? notes_periods[5] :
+                      sound_val < 32'b0000_0000_0000_0000_0000_0001_1100_0000 ? notes_periods[6] : notes_periods[7];
         end
     end
     

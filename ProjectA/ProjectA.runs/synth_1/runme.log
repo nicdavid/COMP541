@@ -14,13 +14,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13704 
+INFO: Helper process launched with PID 13568 
 WARNING: [Synth 8-2611] redeclaration of ansi port clkin is not allowed [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:13]
 WARNING: [Synth 8-976] clkin has already been declared [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:13]
 WARNING: [Synth 8-2654] second declaration of clkin ignored [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:13]
 INFO: [Synth 8-994] clkin is declared here [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/clockdivider_Nexys4.sv:11]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 316.906 ; gain = 86.285
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 317.449 ; gain = 86.309
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/new/top.sv:4]
 	Parameter imem_init bound to: E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/full_imem.mem - type: string 
@@ -220,28 +220,6 @@ WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[
 WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[0]
 WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[3]
 WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[2]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[31]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[30]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[29]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[28]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[27]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[26]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[15]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[14]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[13]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[12]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[11]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[10]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[9]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[8]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[7]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[6]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[5]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[4]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[3]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[2]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[1]
-WARNING: [Synth 8-3331] design sound_reg has unconnected port sound_val[0]
 WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[31]
 WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[30]
 WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[29]
@@ -275,6 +253,15 @@ WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[7]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[6]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[1]
 WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[0]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[8]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[7]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[6]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[5]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[4]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[3]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[2]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[1]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[0]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[255]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[254]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[253]
@@ -306,9 +293,22 @@ WARNING: [Synth 8-3331] design imem has unconnected port pc[228]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[227]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[226]
 WARNING: [Synth 8-3331] design imem has unconnected port pc[225]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[224]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[223]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[222]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[221]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[220]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[219]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[218]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[217]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[216]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[215]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[214]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[213]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[212]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 349.723 ; gain = 119.102
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 350.262 ; gain = 119.121
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -318,7 +318,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 349.723 ; gain = 119.102
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 350.262 ; gain = 119.121
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -368,22 +368,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   INV => LUT1: 1 instances
   MMCME2_BASE => MMCME2_ADV: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 670.969 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 670.512 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 670.969 ; gain = 440.348
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 670.512 ; gain = 439.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 670.969 ; gain = 440.348
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 670.512 ; gain = 439.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 670.969 ; gain = 440.348
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 670.512 ; gain = 439.371
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "y0" won't be mapped to RAM because it is too sparse
@@ -493,7 +493,7 @@ stadxlwaitsampleratetick |                             0100 |                   
 INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
 WARNING: [Synth 8-6014] Unused sequential element StC_Adxl_Ctrl_reg was removed.  [E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:429]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 670.969 ; gain = 440.348
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 670.512 ; gain = 439.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -875,43 +875,43 @@ WARNING: [Synth 8-3332] Sequential element (temp_char_reg[27]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (temp_char_reg[26]) is unused and will be removed from module keyboard.
 WARNING: [Synth 8-3332] Sequential element (temp_char_reg[25]) is unused and will be removed from module keyboard.
 WARNING: [Synth 8-3332] Sequential element (temp_char_reg[24]) is unused and will be removed from module keyboard.
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[8]' (FDE) to 'keyboard/temp_char_reg[9]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[9]' (FDE) to 'keyboard/temp_char_reg[10]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[10]' (FDE) to 'keyboard/temp_char_reg[11]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[15]' (FDE) to 'keyboard/temp_char_reg[13]'
 INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[14]' (FDE) to 'keyboard/temp_char_reg[13]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[15]' (FDE) to 'keyboard/temp_char_reg[13]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[10]' (FDE) to 'keyboard/temp_char_reg[8]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[9]' (FDE) to 'keyboard/temp_char_reg[8]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[8]' (FDE) to 'keyboard/temp_char_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\temp_char_reg[11] )
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[15]' (FDE) to 'keyboard/keyb_char_reg[14]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[14]' (FDE) to 'keyboard/keyb_char_reg[13]'
 INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[9]' (FDE) to 'keyboard/keyb_char_reg[11]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[11]' (FDE) to 'keyboard/keyb_char_reg[10]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[10]' (FDE) to 'keyboard/keyb_char_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[8] )
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[22]' (FDE) to 'keyboard/temp_char_reg[21]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[23]' (FDE) to 'keyboard/temp_char_reg[21]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[11]' (FDE) to 'keyboard/temp_char_reg[18]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[18]' (FDE) to 'keyboard/temp_char_reg[16]'
-INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[19]' (FDE) to 'keyboard/temp_char_reg[16]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[8]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[10]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[13]' (FDE) to 'keyboard/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[15]' (FDE) to 'keyboard/keyb_char_reg[14]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[11]' (FDE) to 'keyboard/temp_char_reg[16]'
 INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[16]' (FDE) to 'keyboard/temp_char_reg[17]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\temp_char_reg[17] )
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[16]' (FDE) to 'keyboard/keyb_char_reg[19]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[8]' (FDE) to 'keyboard/keyb_char_reg[19]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[17]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[18]' (FDE) to 'keyboard/temp_char_reg[17]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[22]' (FDE) to 'keyboard/temp_char_reg[21]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[21]' (FDE) to 'keyboard/temp_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[17]' (FDE) to 'keyboard/temp_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\temp_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[22]' (FDE) to 'keyboard/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[23]' (FDE) to 'keyboard/keyb_char_reg[21]'
 INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[18]' (FDE) to 'keyboard/keyb_char_reg[19]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[23]' (FDE) to 'keyboard/keyb_char_reg[22]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[22]' (FDE) to 'keyboard/keyb_char_reg[21]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[11]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[17]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[16]' (FDE) to 'keyboard/keyb_char_reg[19]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[19] )
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[30]' (FDE) to 'keyboard/keyb_char_reg[31]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[31]' (FDE) to 'keyboard/keyb_char_reg[29]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[26]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[24]' (FDE) to 'keyboard/keyb_char_reg[27]'
 INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[19]' (FDE) to 'keyboard/keyb_char_reg[27]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[27]' (FDE) to 'keyboard/keyb_char_reg[25]'
-INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[24]' (FDE) to 'keyboard/keyb_char_reg[25]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[25] )
-WARNING: [Synth 8-3332] Sequential element (temp_char_reg[17]) is unused and will be removed from module keyboard.
-WARNING: [Synth 8-3332] Sequential element (keyb_char_reg[25]) is unused and will be removed from module keyboard.
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[26]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[30]' (FDE) to 'keyboard/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[29]' (FDE) to 'keyboard/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[25]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[27] )
+WARNING: [Synth 8-3332] Sequential element (temp_char_reg[19]) is unused and will be removed from module keyboard.
+WARNING: [Synth 8-3332] Sequential element (keyb_char_reg[27]) is unused and will be removed from module keyboard.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 670.969 ; gain = 440.348
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 670.512 ; gain = 439.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -949,13 +949,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 670.969 ; gain = 440.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 671.023 ; gain = 439.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 683.629 ; gain = 453.008
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 683.168 ; gain = 452.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -967,7 +967,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -991,7 +991,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1004,7 +1004,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1016,25 +1016,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1070,13 +1070,13 @@ Report Cell Usage:
 |3     |CARRY4      |    75|
 |4     |INV         |     1|
 |5     |LUT1        |   195|
-|6     |LUT2        |   175|
-|7     |LUT3        |   158|
-|8     |LUT4        |   198|
-|9     |LUT5        |   226|
-|10    |LUT6        |   538|
+|6     |LUT2        |   180|
+|7     |LUT3        |   170|
+|8     |LUT4        |   194|
+|9     |LUT5        |   252|
+|10    |LUT6        |   513|
 |11    |MMCME2_BASE |     1|
-|12    |MUXF7       |    54|
+|12    |MUXF7       |    56|
 |13    |MUXF8       |    21|
 |14    |RAM128X1D   |    36|
 |15    |RAM16X1D    |     4|
@@ -1096,35 +1096,35 @@ Report Instance Areas:
 +------+------------------------+--------------------+------+
 |      |Instance                |Module              |Cells |
 +------+------------------------+--------------------+------+
-|1     |top                     |                    |  2262|
-|2     |  accel                 |accelerometer       |   609|
-|3     |    accel               |AccelerometerCtl    |   609|
+|1     |top                     |                    |  2278|
+|2     |  accel                 |accelerometer       |   610|
+|3     |    accel               |AccelerometerCtl    |   610|
 |4     |      ADXL_Control      |ADXL362Ctrl         |   473|
 |5     |        SPI_Interface   |SPI_If              |    78|
-|6     |      Accel_Calculation |AccelArithmetics    |   112|
+|6     |      Accel_Calculation |AccelArithmetics    |   113|
 |7     |  clockdv               |clockdivider_Nexys4 |    14|
 |8     |  disp                  |display8digit       |    53|
 |9     |  display               |vgadisplaydriver    |    83|
 |10    |    vga                 |vgatimer            |    83|
 |11    |      xy                |xycounter           |    79|
-|12    |  keyboard              |keyboard            |   104|
-|13    |  memIO                 |memIO               |   167|
-|14    |    dmem                |dmem                |    33|
+|12    |  keyboard              |keyboard            |   105|
+|13    |  memIO                 |memIO               |   171|
+|14    |    dmem                |dmem                |    36|
 |15    |    led                 |LED_reg             |    16|
-|16    |    smem                |screenmem           |    55|
+|16    |    smem                |screenmem           |    56|
 |17    |    sound_reg           |sound_reg           |    63|
-|18    |  mips                  |mips                |  1060|
-|19    |    dp                  |datapath            |  1060|
-|20    |      pcm               |programcounter      |  1000|
+|18    |  mips                  |mips                |  1070|
+|19    |    dp                  |datapath            |  1070|
+|20    |      pcm               |programcounter      |  1010|
 |21    |      rf                |register_file       |    43|
 |22    |  sound                 |montek_sound_Nexys4 |   116|
 +------+------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 370 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 718.574 ; gain = 166.707
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.574 ; gain = 487.953
+Synthesis finished with 0 errors, 0 critical warnings and 379 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 718.113 ; gain = 166.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 718.113 ; gain = 486.973
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 174 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1143,7 +1143,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 193 Infos, 212 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 718.574 ; gain = 495.715
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 718.113 ; gain = 495.738
 INFO: [Common 17-1381] The checkpoint 'E:/Vivado/Projects/ProjectA/ProjectA.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 718.574 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 12:28:37 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 718.113 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 19:34:41 2017...
